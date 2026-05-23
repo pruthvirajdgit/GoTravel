@@ -11,6 +11,7 @@ deliverables produced during each phase.
 | 1     | Competitor teardowns                   | `research/competitor-teardowns/`  |
 | 1     | Voice-of-customer themes               | `research/voc.md`                 |
 | 1     | Feature matrix                         | `research/feature-matrix.md`      |
+| 1     | Top-10 gap analysis                    | `research/gap-analysis.md`        |
 | 1     | Tech landscape                         | `research/tech-landscape.md`      |
 | 1     | Cross-platform framework recommendation| `research/framework-recommendation.md` |
 | 2     | Personas                               | `product/personas.md`             |
