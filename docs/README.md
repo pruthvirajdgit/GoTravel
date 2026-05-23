@@ -21,7 +21,7 @@ deliverables produced during each phase.
 | 2     | Canonical Excel/CSV template           | `product/templates/`              |
 | —     | Canonical seed dataset                 | `../fixtures/`                    |
 | 3     | Stack decision                         | `architecture/stack-decision.md`  |
-| 4     | System architecture                    | `architecture/system-diagram.png` |
+| 4     | System architecture                    | `architecture/system-diagram.md`  |
 | 4     | Realtime sync protocol                 | `architecture/realtime-protocol.md` |
 | 4     | Offline-first strategy                 | `architecture/offline-sync.md`    |
 | 4     | Security & privacy                     | `architecture/security-and-privacy.md` |
