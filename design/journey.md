@@ -96,6 +96,8 @@ this exact order — it tells the story end-to-end:
    collaborator avatars and a live cursor)
 7. `09-trip-day-view`
 8. `10-item-detail`
+8b. `10b-transit-detail` *(MVP — flight / train / bus / ferry / cab variant,
+    shows terminal · gate / platform · seat · class · pickup details)*
 9. `11-add-item-search`
 10. `12-budget-summary`
 11. `13-share-collaborators`

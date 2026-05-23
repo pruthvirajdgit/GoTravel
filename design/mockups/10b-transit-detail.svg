@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>10b — Transit item detail (flight / train / bus / ferry / cab)</title>
+
+  <!-- Background -->
+  <rect width="375" height="812" fill="#F7F8FA"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1419">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1419" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1419" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1419"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1419"/></g>
+  </g>
+
+  <!-- Hero band (transit purple) -->
+  <rect x="0" y="44" width="375" height="184" fill="#7C5CE6"/>
+  <g opacity="0.18" stroke="#FFFFFF" stroke-width="1.5" fill="none">
+    <path d="M-10 90 Q 90 70 200 95 T 400 90"/>
+    <path d="M-10 130 Q 110 110 220 130 T 400 130"/>
+    <path d="M-10 175 Q 90 155 200 180 T 400 175"/>
+  </g>
+
+  <!-- Top nav (back / share / more) -->
+  <g transform="translate(16, 60)">
+    <rect width="40" height="40" rx="20" fill="#FFFFFF" opacity="0.18"/>
+    <path d="M22 14 L14 20 L22 26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <g transform="translate(319, 60)">
+    <rect width="40" height="40" rx="20" fill="#FFFFFF" opacity="0.18"/>
+    <g transform="translate(11, 11)" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round">
+      <circle cx="5" cy="5" r="2.5"/><circle cx="13" cy="2.5" r="2.5"/><circle cx="13" cy="15.5" r="2.5"/>
+      <path d="M7 6 L11 3.5 M7 8 L11 14"/>
+    </g>
+  </g>
+  <g transform="translate(271, 60)">
+    <rect width="40" height="40" rx="20" fill="#FFFFFF" opacity="0.18"/>
+    <g transform="translate(12, 12)" fill="#FFFFFF">
+      <circle cx="3" cy="8" r="1.6"/><circle cx="8" cy="8" r="1.6"/><circle cx="13" cy="8" r="1.6"/>
+    </g>
+  </g>
+
+  <!-- Mode chip -->
+  <g transform="translate(20, 116)">
+    <rect width="84" height="26" rx="13" fill="#FFFFFF"/>
+    <g transform="translate(10, 6)" fill="#7C5CE6">
+      <path d="M3 8 L9 2 L9 5 L17 5 L17 11 L9 11 L9 14 Z"/>
+    </g>
+    <text x="34" y="17" font-size="11" font-weight="700" fill="#7C5CE6" letter-spacing="0.6">TRAIN · EC 273</text>
+  </g>
+
+  <!-- Title -->
+  <text x="20" y="166" font-size="22" font-weight="700" fill="#FFFFFF">EuroCity “Metropolitan”</text>
+  <text x="20" y="190" font-size="13" fill="#FFFFFF" opacity="0.85">MÁV-START / ČD · Wed 17 Jun · Day 5 of 13</text>
+
+  <!-- Status pill -->
+  <g transform="translate(20, 202)">
+    <rect width="78" height="22" rx="11" fill="#2DA771"/>
+    <circle cx="11" cy="11" r="3" fill="#FFFFFF"/>
+    <text x="20" y="15" font-size="11" font-weight="600" fill="#FFFFFF">Booked</text>
+  </g>
+  <g transform="translate(104, 202)">
+    <rect width="84" height="22" rx="11" fill="#FFFFFF" opacity="0.22"/>
+    <text x="42" y="15" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">7h 14m · 530 km</text>
+  </g>
+
+  <!-- =================== From / To timeline card =================== -->
+  <g transform="translate(16, 252)">
+    <rect width="343" height="196" rx="16" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+    <!-- Timeline rail -->
+    <line x1="36" y1="40" x2="36" y2="158" stroke="#D9DCE4" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="36" cy="40" r="9" fill="#7C5CE6"/>
+    <circle cx="36" cy="40" r="3.5" fill="#FFFFFF"/>
+    <rect x="32" y="154" width="8" height="8" fill="#7C5CE6"/>
+
+    <!-- Departure block -->
+    <text x="60" y="34" font-size="11" font-weight="700" fill="#7C5CE6" letter-spacing="0.5">DEPART · WED 17 JUN</text>
+    <text x="60" y="56" font-size="22" font-weight="700" fill="#0F1419">07:25</text>
+    <text x="142" y="56" font-size="13" font-weight="600" fill="#0F1419">Budapest Keleti</text>
+    <text x="142" y="72" font-size="11" fill="#6B7280">Keleti pályaudvar · Platform 9</text>
+
+    <!-- Duration row -->
+    <g transform="translate(60, 88)">
+      <rect width="267" height="28" rx="8" fill="#F3F0FF"/>
+      <g transform="translate(10, 8)" fill="none" stroke="#7C5CE6" stroke-width="1.6" stroke-linecap="round">
+        <circle cx="6" cy="6" r="5.5"/><path d="M6 3 L6 6 L8 7.5"/>
+      </g>
+      <text x="32" y="18" font-size="12" font-weight="600" fill="#7C5CE6">7 h 14 min · direct · dining car · arrives same day</text>
+    </g>
+
+    <!-- Arrival block -->
+    <text x="60" y="138" font-size="11" font-weight="700" fill="#0E7C7B" letter-spacing="0.5">ARRIVE · WED 17 JUN</text>
+    <text x="60" y="160" font-size="22" font-weight="700" fill="#0F1419">14:39</text>
+    <text x="142" y="160" font-size="13" font-weight="600" fill="#0F1419">Praha hl.n.</text>
+    <text x="142" y="176" font-size="11" fill="#6B7280">Hlavní nádraží · Platform 2</text>
+  </g>
+
+  <!-- =================== Seats / class card =================== -->
+  <g transform="translate(16, 464)">
+    <rect width="343" height="76" rx="16" fill="#FFFFFF" stroke="#E5E7EB"/>
+    <g transform="translate(16, 18)">
+      <rect width="40" height="40" rx="10" fill="#F3F0FF"/>
+      <g transform="translate(10, 9)" fill="none" stroke="#7C5CE6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 18 L2 8 Q2 4 6 4 L14 4 Q18 4 18 8 L18 18"/>
+        <path d="M0 18 L20 18"/><path d="M5 18 L5 22"/><path d="M15 18 L15 22"/>
+      </g>
+    </g>
+    <text x="72" y="34" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.4">SEATS · CLASS</text>
+    <text x="72" y="54" font-size="14" font-weight="600" fill="#0F1419">Coach 263 · seats 41–44 · 1st class</text>
+    <text x="72" y="70" font-size="11" fill="#6B7280">4 of 4 travelers · seats together</text>
+  </g>
+
+  <!-- =================== Booking / cost row =================== -->
+  <g transform="translate(16, 556)">
+    <rect width="343" height="66" rx="16" fill="#FFFFFF" stroke="#E5E7EB"/>
+    <text x="16" y="26" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.4">BOOKING</text>
+    <text x="16" y="48" font-size="13" font-weight="600" fill="#0F1419">MAV-EC273-2026-06-17</text>
+    <text x="16" y="60" font-size="10" fill="#6B7280">jegy.mav.hu · QR in your inbox</text>
+
+    <line x1="200" y1="14" x2="200" y2="52" stroke="#E5E7EB"/>
+    <text x="216" y="26" font-size="11" font-weight="700" fill="#6B7280" letter-spacing="0.4">COST</text>
+    <text x="216" y="48" font-size="13" font-weight="600" fill="#0F1419">64 000 HUF</text>
+    <text x="216" y="60" font-size="10" fill="#6B7280">Personal · paid 02 Mar</text>
+  </g>
+
+  <!-- =================== Reminder row =================== -->
+  <g transform="translate(16, 638)">
+    <rect width="343" height="56" rx="16" fill="#FFF8EC" stroke="#F5D38E"/>
+    <g transform="translate(16, 16)">
+      <circle cx="12" cy="12" r="12" fill="#FF9F1C"/>
+      <path d="M9 8 L9 12 L13 14" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <text x="56" y="30" font-size="13" font-weight="600" fill="#0F1419">Reminder 5 min before departure</text>
+    <text x="56" y="46" font-size="11" fill="#6B7280">Pings 07:20 · Smart ETA reminders coming post-MVP</text>
+    <g transform="translate(296, 18)">
+      <rect width="34" height="20" rx="10" fill="#0E7C7B"/>
+      <circle cx="24" cy="10" r="7" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- =================== Action buttons =================== -->
+  <g transform="translate(16, 710)">
+    <rect width="163" height="48" rx="14" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="1.5"/>
+    <text x="81" y="30" text-anchor="middle" font-size="13" font-weight="600" fill="#0E7C7B">Show on map</text>
+  </g>
+  <g transform="translate(196, 710)">
+    <rect width="163" height="48" rx="14" fill="#0E7C7B"/>
+    <text x="81" y="30" text-anchor="middle" font-size="13" font-weight="600" fill="#FFFFFF">Edit details</text>
+  </g>
+
+  <!-- Home indicator -->
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1419"/>
+</svg>

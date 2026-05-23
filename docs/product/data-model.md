@@ -99,9 +99,12 @@ created_at, updated_at, version, deleted_at
 
 #### Item subtypes (carried as a `details` object on `Item`)
 - **lodging**: `check_in`, `check_out`, `nights`, `room_type`, `guests_count`
-- **transit**: `mode` (`flight`|`train`|`bus`|`ferry`|`car`|`taxi`|`walk`),
-  `carrier`, `vehicle_no`, `from_location_id`, `to_location_id`,
-  `departure_time`, `arrival_time`, `seat`, `class`
+- **transit**: `mode` (`flight`|`train`|`bus`|`ferry`|`car`|`taxi`|`rideshare`|`metro`|`tram`|`walk`),
+  `carrier`, `vehicle_no`, `route_number`, `from_location_id`, `to_location_id`,
+  `departure_time`, `arrival_time`, `departure_terminal`, `departure_gate`,
+  `arrival_terminal`, `arrival_gate`, `seat`, `travel_class`,
+  `pickup_time`, `pickup_address` (last two used for `rideshare`/`taxi`/`car` when
+  pickup differs from `from_location`/`departure_time`)
 - **activity**: `category` (sightseeing, museum, tour, outdoor, nightlife, etc.),
   `duration_min`, `ticket_required`
 - **meal**: `meal_type` (`breakfast`|`lunch`|`dinner`|`snack`), `cuisine`

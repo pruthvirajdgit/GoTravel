@@ -56,6 +56,14 @@
 - Map-first trip view (mockup: `08-trip-map-view.svg`)
 - Day list view (mockup: `09-trip-day-view.svg`)
 - Item detail with edit/delete (mockup: `10-item-detail.svg`)
+- **Transit items as first-class travel-between-destinations** — cabs,
+  rideshare (Uber / Bolt), public transit (metro / tram / bus), intercity
+  bus, train, ferry, flight. Each carries terminal · gate / platform · seat ·
+  class · pickup_time · pickup_address as appropriate. Surfaced inline on
+  the day view and in a dedicated transit detail screen (mockup:
+  `10b-transit-detail.svg`). Tracked by `p6-transport-details`. **Route
+  optimization** (suggesting a better daily order) is post-MVP — MVP renders
+  the user's chosen order only.
 - **Start-of-journey UI** — prominent countdown on home, per-item
   `start_time` + duration, computed travel-time chips between consecutive
   items (straight-line distance × mode-typical-speed, no live routing
@@ -96,6 +104,7 @@ when we build it, it's well-understood scope.
 | CSV export | `csv-export` | — | reverse of the import pipeline |
 | ETA-based smart reminders | `p8-smart-reminders` | — (logic, not UI) | Spec to be written; will use Mapbox Directions API + background location |
 | Monetization model + "Free Forever" commitment | `risk-monetization`, `free-forever-commitment` | — | Deferred 2026-05-23 — lean MVP ships uniformly free with no paywall hooks; both items become meaningful only when a paid tier is on the table |
+| Route optimization (daily resequencing) | `p8-route-optimization` | — | Deferred 2026-05-23 — MVP renders the user's chosen order; post-MVP adds Mapbox Optimization-based "suggest a better order" using the transit detail already captured by `p6-transport-details` |
 | Day-of "trip mode" + tracking handoff | `p8-planning-tracking-handoff` | `17-trip-mode-active.svg` | TBD |
 | Trip recap | (under `p8-post-mvp`) | `18-trip-recap.svg` | TBD |
 | Email inbox / AI generation / booking / wearables / web / social | `p8-post-mvp` | — | TBD when prioritized |

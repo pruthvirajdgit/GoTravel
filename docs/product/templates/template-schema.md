@@ -61,11 +61,20 @@ If a sheet is missing, GoTravel infers what it can:
 | `cost_split`      | enum                     |          | `shared` \| `personal` |
 | `notes`           | string                   |          | Long-form notes. |
 | `source_url`      | URL                      |          | The original link the entry came from (for re-extraction). |
-| `transit_mode`    | enum                     |          | `flight` \| `train` \| `bus` \| `ferry` \| `car` \| `taxi` \| `walk` |
-| `carrier`         | string                   |          | e.g. "Air Canada" |
-| `vehicle_no`      | string                   |          | Flight number, train number, etc. |
+| `transit_mode`    | enum                     |          | `flight` \| `train` \| `bus` \| `ferry` \| `car` \| `taxi` \| `rideshare` \| `metro` \| `tram` \| `walk` |
+| `carrier`         | string                   |          | Operator / airline / app name. Examples: `Air Canada`, `Comboios de Portugal`, `FlixBus`, `Uber`, `Bolt`, `MÁV`. |
+| `vehicle_no`      | string                   |          | Flight number, train number, etc. (e.g. `AC1810`, `EC 273`). |
+| `route_number`    | string                   |          | Public-transport line code (e.g. `M1`, `Tram 4`, `Bus 100E`). |
 | `from_location`   | string                   |          | Free-text origin for transit; geocoded. |
 | `to_location`     | string                   |          | Free-text destination for transit; geocoded. |
+| `departure_terminal` | string                |          | Airport terminal / station hall / port building (e.g. `T2`, `Keleti`, `Gare du Nord`). |
+| `departure_gate`  | string                   |          | Gate / platform / stand / pier (e.g. `B22`, `Platform 9`, `Stand 14`). |
+| `arrival_terminal`| string                   |          | |
+| `arrival_gate`    | string                   |          | |
+| `seat`            | string                   |          | e.g. `12A`, `coach 5 seat 22`. |
+| `travel_class`    | string                   |          | e.g. `economy`, `business`, `1st class`, `standard`. |
+| `pickup_time`     | YYYY-MM-DD HH:MM (local) |          | For cab/rideshare: when the car arrives (often a few min before `start_time`). |
+| `pickup_address`  | string                   |          | Cab/rideshare pickup point if different from `from_location` (e.g. hotel lobby). |
 | `check_in`        | YYYY-MM-DD HH:MM         |          | Lodging only. |
 | `check_out`       | YYYY-MM-DD HH:MM         |          | Lodging only. |
 | `nights`          | integer                  |          | Lodging only. Computed if missing. |
@@ -155,10 +164,24 @@ are pre-baked into the template:
 - `status` — dropdown.
 - `cost_currency` — dropdown of the top 25 currencies + free-text fallback.
 - `cost_split` — dropdown.
-- `transit_mode` — dropdown.
+- `transit_mode` — dropdown (`flight`, `train`, `bus`, `ferry`, `car`, `taxi`, `rideshare`, `metro`, `tram`, `walk`).
 - `meal_type` — dropdown.
+- `travel_class` — free-text with suggestions (`economy`, `premium economy`, `business`, `first`, `standard`, `1st class`, `2nd class`).
 - `lat` / `lng` — number range validation.
 - Conditional formatting highlights rows missing required fields.
+
+### Transit row examples (one row per real-world scenario)
+
+| Scenario | Key columns to fill |
+|---|---|
+| **Flight** | `transit_mode=flight`, `carrier=Air Canada`, `vehicle_no=AC1810`, `from_location=YYZ`, `to_location=BUD`, `departure_terminal=T1`, `departure_gate=D28`, `arrival_terminal=2B`, `seat=14A`, `travel_class=economy`, `booking_ref=QV8X2P` |
+| **Intercity train** | `transit_mode=train`, `carrier=MÁV-ČD`, `vehicle_no=EC 273`, `from_location=Budapest Keleti`, `to_location=Praha hl.n.`, `departure_gate=Platform 9`, `seat=coach 5, seat 22`, `travel_class=1st class` |
+| **Intercity bus** | `transit_mode=bus`, `carrier=FlixBus`, `vehicle_no=N123`, `from_location=Prague ÚAN Florenc`, `to_location=Vienna Erdberg`, `departure_gate=Stand 14`, `seat=12B` |
+| **Metro / tram** | `transit_mode=metro`, `carrier=BKK`, `route_number=M1`, `from_location=Vörösmarty tér`, `to_location=Hősök tere` (intra-city; usually free-text-only, no booking) |
+| **Cab / rideshare** | `transit_mode=rideshare`, `carrier=Bolt`, `from_location=Hotel Rum Budapest`, `to_location=Budapest Keleti`, `pickup_time=2026-06-17 06:50`, `pickup_address=hotel lobby`, `cost_amount=3500`, `cost_currency=HUF` |
+| **Ferry / catamaran** | `transit_mode=ferry`, `carrier=Krilo`, `vehicle_no=Krilo Jet`, `from_location=Split Riva`, `to_location=Hvar Town`, `departure_gate=Pier 2`, `booking_ref=KRILO-2026-06-23-1300` |
+
+The `notes` column can always carry anything that does not fit a structured column (baggage allowance, in-flight wifi password, conductor stops, etc.).
 
 ---
 
