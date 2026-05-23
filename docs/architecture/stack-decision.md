@@ -21,6 +21,31 @@ If you change any decision below, also:
 
 ---
 
+## ⚠ MVP scope carve-out (2026-05-23)
+
+The lean MVP has been re-scoped to defer **live multi-user editing** and
+**multi-currency** to the post-MVP expansion layer. The full stack picks
+below remain the long-term target; for the lean MVP, the following layers
+are explicitly **not built yet**:
+
+| Layer                          | MVP status                                              |
+|--------------------------------|---------------------------------------------------------|
+| Yjs CRDT + y-websocket on Fly  | **Deferred** — `p8-realtime-collab`                     |
+| Supabase Realtime Presence     | **Deferred** — `p8-realtime-collab`                     |
+| FX rate provider               | **Deferred** — `p8-multi-currency` (single currency at trip level) |
+| Excel/CSV ingestion (SheetJS)  | **Deferred** — `p6-excel-import` (templates remain published) |
+| LLM column-inference path      | **Deferred** with the Excel work                        |
+
+What *is* in the lean-MVP runtime: RN+Expo, Supabase Postgres + Auth +
+Storage, PowerSync (server-of-record sync only — handling sharing on
+LWW), Mapbox + Google Places fallback, GPT-4o-mini for **link extraction
+only**, expo-notifications for fixed-offset reminders, op-sqlite + Drizzle
++ SQLCipher, PostHog + Sentry, EAS Build, RevenueCat (post-MVP).
+
+See `mvp-scope.md` for the consolidated MVP vs post-MVP boundary.
+
+---
+
 ## Decision criteria (apply uniformly to every layer)
 
 1. **Lean MVP economics** — bias toward managed services with free/cheap

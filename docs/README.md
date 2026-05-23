@@ -25,6 +25,7 @@ deliverables produced during each phase.
 | 4     | Realtime sync protocol                 | `architecture/realtime-protocol.md` |
 | 4     | Offline-first strategy                 | `architecture/offline-sync.md`    |
 | 4     | Security & privacy                     | `architecture/security-and-privacy.md` |
+| 4     | **MVP scope (what's in/out for lean MVP)** | `architecture/mvp-scope.md`       |
 | 2     | High-fidelity mockups (18 screens)     | `../design/` (open `design/index.html`) |
 
 ## Canonical fixture

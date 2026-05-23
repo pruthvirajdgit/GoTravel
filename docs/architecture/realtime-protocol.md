@@ -2,6 +2,14 @@
 
 > Status: v1.0 (Phase 4). Defines the wire-level semantics of the three
 > realtime components picked in `stack-decision.md` §4.
+>
+> ⚠ **MVP scope (2026-05-23):** The lean MVP ships **only the PowerSync
+> component** below — single-account multi-device sync with last-write-wins
+> for shared trips. The Yjs and Supabase Presence components, and the
+> entire per-field CRDT/LWW matrix in §5, are deferred to the post-MVP
+> expansion (`p8-realtime-collab`). The full protocol is documented here
+> so the post-MVP build is a known scope, not a redesign.
+> See `mvp-scope.md`.
 
 ## Three components, three roles
 
