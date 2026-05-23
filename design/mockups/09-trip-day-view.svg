@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>09 — Trip detail: day view (list)</title>
+
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/></g>
+  </g>
+
+  <!-- Top bar -->
+  <g transform="translate(0, 56)">
+    <g transform="translate(20, 0)" stroke="#0F1F2E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="14,4 4,14 14,24"/>
+    </g>
+    <text x="48" y="20" font-size="17" font-weight="600" fill="#0F1F2E">Day 3 · Budapest</text>
+    <text x="48" y="38" font-size="13" fill="#5A6B7A">Tue Jun 16</text>
+    <!-- View toggle -->
+    <g transform="translate(280, 4)">
+      <rect width="76" height="32" rx="16" fill="#FFFFFF" stroke="#E5EBF0"/>
+      <g transform="translate(6, 6)">
+        <rect width="32" height="20" rx="10" fill="#0E7C7B"/>
+        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="600" fill="#FFFFFF">List</text>
+      </g>
+      <text x="56" y="20" text-anchor="middle" font-size="10" font-weight="600" fill="#5A6B7A">Map</text>
+    </g>
+  </g>
+
+  <!-- Day chips horizontal -->
+  <g transform="translate(16, 116)">
+    <g>
+      <rect width="48" height="40" rx="10" fill="#FFFFFF"/>
+      <text x="24" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#5A6B7A">DAY 1</text>
+      <text x="24" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1F2E">14</text>
+    </g>
+    <g transform="translate(56, 0)">
+      <rect width="48" height="40" rx="10" fill="#FFFFFF"/>
+      <text x="24" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#5A6B7A">DAY 2</text>
+      <text x="24" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1F2E">15</text>
+    </g>
+    <g transform="translate(112, 0)">
+      <rect width="48" height="40" rx="10" fill="#0E7C7B"/>
+      <text x="24" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#FFFFFF" opacity="0.85">DAY 3</text>
+      <text x="24" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">16</text>
+    </g>
+    <g transform="translate(168, 0)">
+      <rect width="48" height="40" rx="10" fill="#FFFFFF"/>
+      <text x="24" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#5A6B7A">DAY 4</text>
+      <text x="24" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1F2E">17</text>
+    </g>
+    <g transform="translate(224, 0)">
+      <rect width="48" height="40" rx="10" fill="#FFFFFF"/>
+      <text x="24" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#5A6B7A">DAY 5</text>
+      <text x="24" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1F2E">18</text>
+    </g>
+    <g transform="translate(280, 0)">
+      <rect width="48" height="40" rx="10" fill="#FFFFFF"/>
+      <text x="24" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#5A6B7A">DAY 6</text>
+      <text x="24" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1F2E">19</text>
+    </g>
+  </g>
+
+  <!-- Stats row -->
+  <g transform="translate(24, 176)">
+    <g>
+      <text font-size="11" font-weight="600" fill="#92A1AE">PLANNED</text>
+      <text y="20" font-size="16" font-weight="700" fill="#0F1F2E">4 items</text>
+    </g>
+    <g transform="translate(96, 0)">
+      <text font-size="11" font-weight="600" fill="#92A1AE">BUDGET</text>
+      <text y="20" font-size="16" font-weight="700" fill="#0F1F2E">€68</text>
+    </g>
+    <g transform="translate(176, 0)">
+      <text font-size="11" font-weight="600" fill="#92A1AE">WALK</text>
+      <text y="20" font-size="16" font-weight="700" fill="#0F1F2E">3.2 km</text>
+    </g>
+    <!-- Optimize button -->
+    <g transform="translate(252, 4)">
+      <rect width="100" height="32" rx="16" fill="#0E7C7B" opacity="0.10"/>
+      <g transform="translate(10, 9)" stroke="#0E7C7B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 8 a6 6 0 1 1 12 0 a6 6 0 1 1 -12 0"/>
+        <polyline points="11,1 14,2 13,5"/>
+      </g>
+      <text x="32" y="21" font-size="12" font-weight="600" fill="#0E7C7B">Optimize</text>
+    </g>
+  </g>
+
+  <!-- Timeline -->
+  <g transform="translate(0, 232)">
+    <!-- Spine line -->
+    <line x1="56" y1="20" x2="56" y2="468" stroke="#E5EBF0" stroke-width="2" stroke-dasharray="2 3"/>
+
+    <!-- Item 1: Baths -->
+    <g transform="translate(0, 16)">
+      <text x="40" y="18" text-anchor="end" font-size="11" font-weight="700" fill="#5A6B7A">09:00</text>
+      <circle cx="56" cy="14" r="8" fill="#FFFFFF" stroke="#2DA771" stroke-width="3"/>
+      <g transform="translate(76, 0)">
+        <rect width="275" height="92" rx="14" fill="#FFFFFF"/>
+        <g transform="translate(16, 16)">
+          <rect width="32" height="32" rx="10" fill="#2DA771" opacity="0.15"/>
+          <text x="16" y="20" text-anchor="middle" font-size="14" fill="#2DA771">★</text>
+        </g>
+        <text x="60" y="32" font-size="15" font-weight="600" fill="#0F1F2E">Széchenyi Thermal Baths</text>
+        <text x="60" y="50" font-size="12" fill="#5A6B7A">Activity · 1h · 12,000 HUF</text>
+        <!-- status -->
+        <g transform="translate(60, 62)">
+          <rect width="58" height="20" rx="10" fill="#2DA771" opacity="0.15"/>
+          <text x="29" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#2DA771">BOOKED</text>
+        </g>
+        <!-- comment badge -->
+        <g transform="translate(232, 62)">
+          <g stroke="#92A1AE" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M0 4 h14 v8 h-9 l-3 3 v-3 h-2 z"/>
+          </g>
+          <text x="22" y="14" font-size="11" font-weight="600" fill="#5A6B7A">2</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Travel: walk -->
+    <g transform="translate(56, 124)">
+      <line x1="0" y1="-4" x2="0" y2="12" stroke="#92A1AE" stroke-width="1.5" stroke-dasharray="2 2"/>
+      <g transform="translate(8, -2)" font-size="11" fill="#92A1AE">
+        <text>walk 18 min · 1.4 km</text>
+      </g>
+    </g>
+
+    <!-- Item 2: Lunch -->
+    <g transform="translate(0, 132)">
+      <text x="40" y="18" text-anchor="end" font-size="11" font-weight="700" fill="#5A6B7A">13:00</text>
+      <circle cx="56" cy="14" r="8" fill="#FFFFFF" stroke="#FF7A59" stroke-width="3"/>
+      <g transform="translate(76, 0)">
+        <rect width="275" height="92" rx="14" fill="#FFFFFF"/>
+        <g transform="translate(16, 16)">
+          <rect width="32" height="32" rx="10" fill="#FF7A59" opacity="0.15"/>
+          <text x="16" y="22" text-anchor="middle" font-size="13" fill="#FF7A59">🍴</text>
+        </g>
+        <text x="60" y="32" font-size="15" font-weight="600" fill="#0F1F2E">Hungarikum Bisztró</text>
+        <text x="60" y="50" font-size="12" fill="#5A6B7A">Restaurant · 1h 30m · ~8,500 HUF</text>
+        <g transform="translate(60, 62)">
+          <rect width="64" height="20" rx="10" fill="#F2A93B" opacity="0.18"/>
+          <text x="32" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#F2A93B">PLANNED</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Item 3: Parliament -->
+    <g transform="translate(0, 244)">
+      <text x="40" y="18" text-anchor="end" font-size="11" font-weight="700" fill="#5A6B7A">16:00</text>
+      <circle cx="56" cy="14" r="8" fill="#FFFFFF" stroke="#F2A93B" stroke-width="3"/>
+      <g transform="translate(76, 0)">
+        <rect width="275" height="92" rx="14" fill="#FFFFFF"/>
+        <g transform="translate(16, 16)">
+          <rect width="32" height="32" rx="10" fill="#F2A93B" opacity="0.18"/>
+          <text x="16" y="22" text-anchor="middle" font-size="13" fill="#F2A93B">🏛</text>
+        </g>
+        <text x="60" y="32" font-size="15" font-weight="600" fill="#0F1F2E">Hungarian Parliament tour</text>
+        <text x="60" y="50" font-size="12" fill="#5A6B7A">Landmark · 1h · 9,000 HUF</text>
+        <g transform="translate(60, 62)">
+          <rect width="58" height="20" rx="10" fill="#2DA771" opacity="0.15"/>
+          <text x="29" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#2DA771">BOOKED</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Item 4: Dinner -->
+    <g transform="translate(0, 356)">
+      <text x="40" y="18" text-anchor="end" font-size="11" font-weight="700" fill="#5A6B7A">19:30</text>
+      <circle cx="56" cy="14" r="8" fill="#FFFFFF" stroke="#FF7A59" stroke-width="3"/>
+      <g transform="translate(76, 0)">
+        <rect width="275" height="92" rx="14" fill="#FFFFFF"/>
+        <g transform="translate(16, 16)">
+          <rect width="32" height="32" rx="10" fill="#FF7A59" opacity="0.15"/>
+          <text x="16" y="22" text-anchor="middle" font-size="13" fill="#FF7A59">🍴</text>
+        </g>
+        <text x="60" y="32" font-size="15" font-weight="600" fill="#0F1F2E">Dinner at Mazel Tov</text>
+        <text x="60" y="50" font-size="12" fill="#5A6B7A">Restaurant · 2h · TBD</text>
+        <!-- needs price -->
+        <g transform="translate(60, 62)">
+          <rect width="76" height="20" rx="10" fill="#F2A93B" opacity="0.18"/>
+          <text x="38" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#F2A93B">NEEDS PRICE</text>
+        </g>
+        <!-- Editing indicator: Anna -->
+        <g transform="translate(232, 60)">
+          <circle cx="12" cy="12" r="12" fill="#0EA5E9" stroke="#FFFFFF" stroke-width="2"/>
+          <text x="12" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#FFFFFF">A</text>
+          <text x="-6" y="-2" font-size="9" font-weight="700" fill="#0EA5E9">EDITING</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- FAB -->
+  <g transform="translate(323, 658)">
+    <circle cx="0" cy="0" r="26" fill="#0E7C7B"/>
+    <g stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
+      <line x1="-9" y1="0" x2="9" y2="0"/>
+      <line x1="0" y1="-9" x2="0" y2="9"/>
+    </g>
+  </g>
+
+  <!-- Bottom nav -->
+  <g transform="translate(0, 729)">
+    <rect width="375" height="49" fill="#FFFFFF"/>
+    <line x1="0" y1="0" x2="375" y2="0" stroke="#E5EBF0"/>
+    <g transform="translate(57, 8)" stroke="#92A1AE" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(8, 4)"><path d="M2 2 h16 v16 h-16 z"/><path d="M6 6 h8 M6 10 h8 M6 14 h5"/></g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A" stroke="none">Trips</text>
+    </g>
+    <g transform="translate(157, 8)">
+      <rect x="-12" y="-2" width="60" height="36" rx="18" fill="#0E7C7B" opacity="0.1"/>
+      <g transform="translate(8, 4)" stroke="#0E7C7B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 4 l6 -2 l6 2 l4 -2 v14 l-4 2 l-6 -2 l-6 2 z"/>
+        <path d="M8 2 v16 M14 4 v16"/>
+      </g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" font-weight="600" fill="#0E7C7B">Map</text>
+    </g>
+    <g transform="translate(257, 8)" stroke="#92A1AE" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(8, 6)"><path d="M2 6 h16 v10 h-16 z"/><path d="M2 6 l8 6 l8 -6"/></g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A" stroke="none">Inbox</text>
+    </g>
+    <g transform="translate(317, 8)">
+      <circle cx="18" cy="14" r="10" fill="#4F46E5"/>
+      <text x="18" y="18" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">M</text>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A">Me</text>
+    </g>
+  </g>
+
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

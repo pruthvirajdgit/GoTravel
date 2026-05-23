@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>07 — Home (populated trip list)</title>
+
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/></g>
+  </g>
+
+  <!-- Top app bar -->
+  <g transform="translate(0, 56)">
+    <g transform="translate(24, 0)">
+      <circle cx="14" cy="14" r="14" fill="#0E7C7B"/>
+      <circle cx="14" cy="14" r="5.5" fill="#FFFFFF"/>
+    </g>
+    <text x="60" y="20" font-size="20" font-weight="700" fill="#0E7C7B">GoTravel</text>
+
+    <!-- Search icon -->
+    <g transform="translate(295, 6)" stroke="#0F1F2E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="8" cy="8" r="6"/>
+      <line x1="13" y1="13" x2="17" y2="17"/>
+    </g>
+    <!-- Avatar -->
+    <circle cx="335" cy="14" r="18" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="335" y="20" text-anchor="middle" font-size="13" font-weight="600" fill="#FFFFFF">M</text>
+  </g>
+
+  <!-- Title -->
+  <g transform="translate(24, 116)">
+    <text font-size="28" font-weight="700" fill="#0F1F2E">Your trips</text>
+  </g>
+
+  <!-- Tabs -->
+  <g transform="translate(24, 160)">
+    <g>
+      <rect width="92" height="36" rx="18" fill="#0E7C7B"/>
+      <text x="46" y="23" text-anchor="middle" font-size="13" font-weight="600" fill="#FFFFFF">Upcoming · 1</text>
+    </g>
+    <g transform="translate(100, 0)">
+      <text x="20" y="23" font-size="13" font-weight="600" fill="#5A6B7A">Past · 0</text>
+    </g>
+    <g transform="translate(168, 0)">
+      <text x="36" y="23" font-size="13" font-weight="600" fill="#5A6B7A">Shared with me · 0</text>
+    </g>
+  </g>
+
+  <!-- Trip card -->
+  <g transform="translate(24, 216)">
+    <rect width="327" height="232" rx="20" fill="#FFFFFF"/>
+
+    <!-- Hero map -->
+    <defs>
+      <linearGradient id="map7" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#0E7C7B" stop-opacity="0.25"/>
+        <stop offset="1" stop-color="#FF7A59" stop-opacity="0.30"/>
+      </linearGradient>
+    </defs>
+    <g>
+      <path d="M0 0 h327 v120 h-327 z" fill="url(#map7)"/>
+      <!-- coast/route line -->
+      <path d="M40 80 Q90 30 150 50 T260 80 Q280 100 300 90" stroke="#0E7C7B" stroke-width="2.5" fill="none" stroke-dasharray="4 4"/>
+      <!-- pins along route -->
+      <g>
+        <circle cx="40" cy="80" r="5" fill="#FF7A59"/>
+        <circle cx="120" cy="44" r="5" fill="#0E7C7B"/>
+        <circle cx="200" cy="58" r="5" fill="#0E7C7B"/>
+        <circle cx="260" cy="80" r="5" fill="#FF7A59"/>
+      </g>
+      <!-- pin labels -->
+      <g font-size="10" font-weight="600" fill="#0F1F2E">
+        <rect x="22" y="86" width="42" height="16" rx="4" fill="#FFFFFF"/>
+        <text x="43" y="97" text-anchor="middle">BUD</text>
+        <rect x="103" y="24" width="42" height="16" rx="4" fill="#FFFFFF"/>
+        <text x="124" y="35" text-anchor="middle">PRG</text>
+        <rect x="183" y="38" width="42" height="16" rx="4" fill="#FFFFFF"/>
+        <text x="204" y="49" text-anchor="middle">SPU</text>
+        <rect x="244" y="86" width="42" height="16" rx="4" fill="#FFFFFF"/>
+        <text x="265" y="97" text-anchor="middle">HVA</text>
+      </g>
+    </g>
+
+    <!-- Content -->
+    <g transform="translate(20, 140)">
+      <!-- Status pill -->
+      <g>
+        <rect width="92" height="22" rx="11" fill="#FF7A59" opacity="0.15"/>
+        <text x="46" y="15" text-anchor="middle" font-size="11" font-weight="600" fill="#FF7A59">Starts in 22d</text>
+      </g>
+      <text y="46" font-size="18" font-weight="700" fill="#0F1F2E">Budapest → Prague → Croatia</text>
+      <text y="68" font-size="13" fill="#5A6B7A">Jun 14 – Jun 26, 2026 · 13 days · 41 items</text>
+
+      <!-- Footer row -->
+      <g transform="translate(0, 80)">
+        <!-- Avatar stack -->
+        <circle cx="14" cy="0" r="14" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="14" y="4" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">M</text>
+        <circle cx="34" cy="0" r="14" fill="#0EA5E9" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="34" y="4" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">A</text>
+        <circle cx="54" cy="0" r="14" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="54" y="4" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">J</text>
+        <circle cx="74" cy="0" r="14" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="74" y="4" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">L</text>
+        <text x="100" y="4" font-size="12" fill="#5A6B7A">4 travelers</text>
+
+        <!-- Budget -->
+        <text x="287" y="4" text-anchor="end" font-size="14" font-weight="700" fill="#0F1F2E">€2,840</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Second card: shared (empty) hint -->
+  <g transform="translate(24, 468)">
+    <rect width="327" height="120" rx="20" fill="#FFFFFF" stroke="#E5EBF0" stroke-dasharray="6 4"/>
+    <g transform="translate(24, 24)">
+      <rect width="48" height="48" rx="12" fill="#FF7A59" opacity="0.12"/>
+      <g transform="translate(12, 12)" stroke="#FF7A59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="6" r="4"/>
+        <path d="M2 16 q0 -6 6 -6 t6 6"/>
+        <line x1="14" y1="3" x2="14" y2="9"/>
+        <line x1="11" y1="6" x2="17" y2="6"/>
+      </g>
+    </g>
+    <text x="88" y="40" font-size="15" font-weight="600" fill="#0F1F2E">Plan with someone?</text>
+    <text x="88" y="58" font-size="13" fill="#5A6B7A">Invite a friend — they edit, you</text>
+    <text x="88" y="74" font-size="13" fill="#5A6B7A">see it instantly on the map.</text>
+  </g>
+
+  <!-- FAB -->
+  <g transform="translate(303, 654)">
+    <circle cx="0" cy="0" r="28" fill="#0E7C7B"/>
+    <g stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
+      <line x1="-10" y1="0" x2="10" y2="0"/>
+      <line x1="0" y1="-10" x2="0" y2="10"/>
+    </g>
+  </g>
+
+  <!-- Bottom nav -->
+  <g transform="translate(0, 729)">
+    <rect width="375" height="49" fill="#FFFFFF"/>
+    <line x1="0" y1="0" x2="375" y2="0" stroke="#E5EBF0"/>
+    <g transform="translate(57, 8)">
+      <rect x="-12" y="-2" width="60" height="36" rx="18" fill="#0E7C7B" opacity="0.1"/>
+      <g transform="translate(8, 4)" stroke="#0E7C7B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 2 h16 v16 h-16 z"/>
+        <path d="M6 6 h8 M6 10 h8 M6 14 h5"/>
+      </g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" font-weight="600" fill="#0E7C7B">Trips</text>
+    </g>
+    <g transform="translate(157, 8)">
+      <g transform="translate(8, 4)" stroke="#92A1AE" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 4 l6 -2 l6 2 l4 -2 v14 l-4 2 l-6 -2 l-6 2 z"/>
+        <path d="M8 2 v16 M14 4 v16"/>
+      </g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A">Map</text>
+    </g>
+    <g transform="translate(257, 8)">
+      <g transform="translate(8, 6)" stroke="#92A1AE" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 6 h16 v10 h-16 z"/>
+        <path d="M2 6 l8 6 l8 -6"/>
+      </g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A">Inbox</text>
+      <!-- badge -->
+      <circle cx="32" cy="6" r="6" fill="#FF7A59"/>
+      <text x="32" y="9" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">2</text>
+    </g>
+    <g transform="translate(317, 8)">
+      <circle cx="18" cy="14" r="10" fill="#4F46E5"/>
+      <text x="18" y="18" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">M</text>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A">Me</text>
+    </g>
+  </g>
+
+  <!-- Home indicator -->
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

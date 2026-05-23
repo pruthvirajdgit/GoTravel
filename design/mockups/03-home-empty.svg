@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>03 — Home (empty state)</title>
+
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)">
+      <rect x="0" y="6" width="3" height="3" rx="0.5"/>
+      <rect x="5" y="4" width="3" height="5" rx="0.5"/>
+      <rect x="10" y="2" width="3" height="7" rx="0.5"/>
+      <rect x="15" y="0" width="3" height="9" rx="0.5"/>
+    </g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)">
+      <rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/>
+      <rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/>
+      <rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/>
+    </g>
+  </g>
+
+  <!-- Top app bar -->
+  <g transform="translate(0, 56)">
+    <g transform="translate(24, 0)">
+      <circle cx="14" cy="14" r="14" fill="#0E7C7B"/>
+      <circle cx="14" cy="14" r="5.5" fill="#FFFFFF"/>
+    </g>
+    <text x="60" y="20" font-size="20" font-weight="700" fill="#0E7C7B">GoTravel</text>
+
+    <!-- Avatar (Maya) -->
+    <circle cx="335" cy="14" r="18" fill="#4F46E5" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="335" y="20" text-anchor="middle" font-size="13" font-weight="600" fill="#FFFFFF">M</text>
+  </g>
+
+  <!-- Greeting -->
+  <g transform="translate(24, 132)">
+    <text font-size="28" font-weight="700" fill="#0F1F2E">Hi Maya 👋</text>
+    <text y="30" font-size="15" fill="#5A6B7A">Let's plan your first adventure.</text>
+  </g>
+
+  <!-- Empty-state illustration card -->
+  <g transform="translate(24, 220)">
+    <rect width="327" height="380" rx="20" fill="#FFFFFF"/>
+
+    <!-- Illustration -->
+    <g transform="translate(163.5, 76)">
+      <!-- Soft circle bg -->
+      <circle cx="0" cy="0" r="64" fill="#EDF2F5"/>
+      <!-- Stylized map -->
+      <g transform="translate(-40, -40)">
+        <rect x="0" y="0" width="80" height="80" rx="12" fill="#0E7C7B" opacity="0.12"/>
+        <!-- map "roads" -->
+        <path d="M10 30 Q40 10 70 40 T70 70" stroke="#0E7C7B" stroke-width="2" fill="none" opacity="0.4"/>
+        <path d="M15 60 Q35 50 60 20" stroke="#0E7C7B" stroke-width="1.5" fill="none" opacity="0.3"/>
+        <!-- pins -->
+        <g transform="translate(20, 24)">
+          <path d="M0 0 a8 8 0 1 1 16 0 c0 7 -8 14 -8 14 s-8 -7 -8 -14z" fill="#FF7A59"/>
+          <circle cx="8" cy="8" r="3" fill="#FFFFFF"/>
+        </g>
+        <g transform="translate(48, 38)">
+          <path d="M0 0 a7 7 0 1 1 14 0 c0 6 -7 12 -7 12 s-7 -6 -7 -12z" fill="#0E7C7B"/>
+          <circle cx="7" cy="7" r="2.5" fill="#FFFFFF"/>
+        </g>
+      </g>
+    </g>
+
+    <text x="163.5" y="200" text-anchor="middle" font-size="22" font-weight="600" fill="#0F1F2E">No trips yet</text>
+    <text x="163.5" y="226" text-anchor="middle" font-size="15" fill="#5A6B7A">Create one in seconds — paste a link,</text>
+    <text x="163.5" y="246" text-anchor="middle" font-size="15" fill="#5A6B7A">upload a spreadsheet, or start blank.</text>
+
+    <!-- Primary CTA -->
+    <g transform="translate(20, 280)">
+      <rect width="287" height="56" rx="12" fill="#0E7C7B"/>
+      <text x="143.5" y="36" text-anchor="middle" font-size="17" font-weight="600" fill="#FFFFFF">+ Create a trip</text>
+    </g>
+  </g>
+
+  <!-- "Try a demo" helper -->
+  <g transform="translate(187.5, 644)" text-anchor="middle">
+    <text font-size="14" fill="#5A6B7A">Want to look around first?</text>
+    <text y="22" font-size="14" font-weight="600" fill="#0E7C7B">Load the Budapest → Croatia demo</text>
+  </g>
+
+  <!-- Bottom nav -->
+  <g transform="translate(0, 729)">
+    <rect width="375" height="49" fill="#FFFFFF"/>
+    <line x1="0" y1="0" x2="375" y2="0" stroke="#E5EBF0"/>
+    <!-- Trips (active) -->
+    <g transform="translate(57, 8)">
+      <rect x="-12" y="-2" width="60" height="36" rx="18" fill="#0E7C7B" opacity="0.1"/>
+      <g transform="translate(8, 4)" stroke="#0E7C7B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 2 h16 v16 h-16 z"/>
+        <path d="M6 6 h8 M6 10 h8 M6 14 h5"/>
+      </g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" font-weight="600" fill="#0E7C7B">Trips</text>
+    </g>
+    <!-- Map -->
+    <g transform="translate(157, 8)">
+      <g transform="translate(8, 4)" stroke="#92A1AE" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 4 l6 -2 l6 2 l4 -2 v14 l-4 2 l-6 -2 l-6 2 z"/>
+        <path d="M8 2 v16 M14 4 v16"/>
+      </g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A">Map</text>
+    </g>
+    <!-- Inbox -->
+    <g transform="translate(257, 8)">
+      <g transform="translate(8, 6)" stroke="#92A1AE" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 6 h16 v10 h-16 z"/>
+        <path d="M2 6 l8 6 l8 -6"/>
+      </g>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A">Inbox</text>
+    </g>
+    <!-- Me -->
+    <g transform="translate(317, 8)">
+      <circle cx="18" cy="14" r="10" fill="#4F46E5"/>
+      <text x="18" y="18" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">M</text>
+      <text x="18" y="42" text-anchor="middle" font-size="11" fill="#5A6B7A">Me</text>
+    </g>
+  </g>
+
+  <!-- Home indicator -->
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

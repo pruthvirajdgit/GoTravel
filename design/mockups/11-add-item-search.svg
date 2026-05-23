@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>11 — Add item: search POI</title>
+
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/></g>
+  </g>
+
+  <!-- Top bar -->
+  <g transform="translate(0, 56)">
+    <text x="24" y="22" font-size="17" font-weight="600" fill="#0F1F2E">Add to Day 4 · Wed Jun 17</text>
+    <g transform="translate(338, 0)" stroke="#0F1F2E" stroke-width="2" stroke-linecap="round">
+      <line x1="-6" y1="6" x2="6" y2="20"/>
+      <line x1="6" y1="6" x2="-6" y2="20"/>
+    </g>
+  </g>
+
+  <!-- Search input -->
+  <g transform="translate(24, 100)">
+    <rect width="327" height="48" rx="12" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="1.5"/>
+    <g transform="translate(14, 16)" stroke="#5A6B7A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="8" cy="8" r="6"/>
+      <line x1="13" y1="13" x2="17" y2="17"/>
+    </g>
+    <text x="44" y="30" font-size="14" fill="#0F1F2E">vyseh</text>
+    <line x1="64" y1="14" x2="64" y2="34" stroke="#0E7C7B" stroke-width="1.5"/>
+    <!-- Clear -->
+    <g transform="translate(296, 14)">
+      <circle cx="10" cy="10" r="10" fill="#EDF2F5"/>
+      <g stroke="#5A6B7A" stroke-width="1.6" stroke-linecap="round">
+        <line x1="6" y1="6" x2="14" y2="14"/>
+        <line x1="14" y1="6" x2="6" y2="14"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Tabs (where to search) -->
+  <g transform="translate(24, 168)">
+    <g>
+      <rect width="74" height="32" rx="16" fill="#0E7C7B"/>
+      <text x="37" y="21" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF">Places</text>
+    </g>
+    <g transform="translate(82, 0)">
+      <text x="22" y="21" font-size="12" font-weight="600" fill="#5A6B7A">Paste a link</text>
+    </g>
+    <g transform="translate(180, 0)">
+      <text x="22" y="21" font-size="12" font-weight="600" fill="#5A6B7A">Note</text>
+    </g>
+    <g transform="translate(232, 0)">
+      <text x="22" y="21" font-size="12" font-weight="600" fill="#5A6B7A">From my saved</text>
+    </g>
+  </g>
+
+  <!-- Section header -->
+  <g transform="translate(24, 220)">
+    <text font-size="13" font-weight="600" fill="#5A6B7A">RESULTS NEAR DAY 4</text>
+  </g>
+
+  <!-- Result 1: Vyšehrad fortress -->
+  <g transform="translate(24, 244)">
+    <rect width="327" height="92" rx="14" fill="#FFFFFF"/>
+    <g transform="translate(16, 16)">
+      <rect width="60" height="60" rx="14" fill="#F2A93B" opacity="0.18"/>
+      <text x="30" y="40" text-anchor="middle" font-size="24" fill="#F2A93B">🏛</text>
+    </g>
+    <text x="92" y="32" font-size="15" font-weight="600" fill="#0F1F2E">Vyšehrad Fortress</text>
+    <text x="92" y="50" font-size="12" fill="#5A6B7A">Landmark · 2 km · Prague 2</text>
+    <!-- Rating -->
+    <g transform="translate(92, 60)" font-size="11">
+      <text fill="#F2A93B">★ 4.7</text>
+      <text x="34" fill="#5A6B7A">(12,840 reviews)</text>
+    </g>
+    <!-- Add btn -->
+    <g transform="translate(276, 30)">
+      <rect width="36" height="36" rx="12" fill="#0E7C7B"/>
+      <g stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
+        <line x1="10" y1="18" x2="26" y2="18"/>
+        <line x1="18" y1="10" x2="18" y2="26"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Result 2: Vyšehrad Cemetery -->
+  <g transform="translate(24, 352)">
+    <rect width="327" height="92" rx="14" fill="#FFFFFF"/>
+    <g transform="translate(16, 16)">
+      <rect width="60" height="60" rx="14" fill="#92A1AE" opacity="0.18"/>
+      <text x="30" y="40" text-anchor="middle" font-size="22" fill="#5A6B7A">⛪</text>
+    </g>
+    <text x="92" y="32" font-size="15" font-weight="600" fill="#0F1F2E">Vyšehrad Cemetery</text>
+    <text x="92" y="50" font-size="12" fill="#5A6B7A">Cemetery · 2.1 km · Prague 2</text>
+    <g transform="translate(92, 60)" font-size="11">
+      <text fill="#F2A93B">★ 4.8</text>
+      <text x="34" fill="#5A6B7A">(2,340 reviews)</text>
+    </g>
+    <g transform="translate(276, 30)">
+      <rect width="36" height="36" rx="12" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="1.5"/>
+      <g stroke="#0E7C7B" stroke-width="2.5" stroke-linecap="round">
+        <line x1="10" y1="18" x2="26" y2="18"/>
+        <line x1="18" y1="10" x2="18" y2="26"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Result 3: Café -->
+  <g transform="translate(24, 460)">
+    <rect width="327" height="92" rx="14" fill="#FFFFFF"/>
+    <g transform="translate(16, 16)">
+      <rect width="60" height="60" rx="14" fill="#FF7A59" opacity="0.18"/>
+      <text x="30" y="40" text-anchor="middle" font-size="22" fill="#FF7A59">☕</text>
+    </g>
+    <text x="92" y="32" font-size="15" font-weight="600" fill="#0F1F2E">Café Citadela</text>
+    <text x="92" y="50" font-size="12" fill="#5A6B7A">Café · 2.0 km · Vyšehrad</text>
+    <g transform="translate(92, 60)" font-size="11">
+      <text fill="#F2A93B">★ 4.5</text>
+      <text x="34" fill="#5A6B7A">(890 reviews) · €€</text>
+    </g>
+    <g transform="translate(276, 30)">
+      <rect width="36" height="36" rx="12" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="1.5"/>
+      <g stroke="#0E7C7B" stroke-width="2.5" stroke-linecap="round">
+        <line x1="10" y1="18" x2="26" y2="18"/>
+        <line x1="18" y1="10" x2="18" y2="26"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Add manual -->
+  <g transform="translate(24, 568)">
+    <rect width="327" height="60" rx="14" fill="#FFFFFF" stroke="#E5EBF0" stroke-dasharray="6 4"/>
+    <g transform="translate(20, 18)" stroke="#5A6B7A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="2" y1="12" x2="22" y2="12"/>
+      <line x1="12" y1="2" x2="12" y2="22"/>
+    </g>
+    <text x="56" y="36" font-size="14" font-weight="600" fill="#0F1F2E">Add "vyseh" as a custom item</text>
+  </g>
+
+  <!-- Powered by -->
+  <g transform="translate(187.5, 660)" text-anchor="middle">
+    <text font-size="11" fill="#92A1AE">Results from Mapbox · enriched by Google Places</text>
+  </g>
+
+  <!-- Bottom keyboard hint (peek) -->
+  <g transform="translate(0, 692)">
+    <rect width="375" height="86" fill="#E5EBF0"/>
+    <rect x="170" y="8" width="36" height="4" rx="2" fill="#92A1AE" opacity="0.5"/>
+    <text x="187.5" y="44" text-anchor="middle" font-size="13" fill="#5A6B7A">[keyboard]</text>
+  </g>
+
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

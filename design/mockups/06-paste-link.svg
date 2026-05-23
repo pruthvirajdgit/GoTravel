@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>06 — Paste a link</title>
+
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/></g>
+  </g>
+
+  <!-- Top app bar -->
+  <g transform="translate(0, 56)">
+    <g transform="translate(20, 0)" stroke="#0F1F2E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="14,4 4,14 14,24"/>
+    </g>
+    <text x="48" y="20" font-size="17" font-weight="600" fill="#0F1F2E">Paste a booking link</text>
+  </g>
+
+  <!-- URL input -->
+  <g transform="translate(24, 108)">
+    <text font-size="13" font-weight="600" fill="#5A6B7A">PASTE YOUR LINK</text>
+    <rect y="14" width="327" height="56" rx="12" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="1.5"/>
+    <text x="16" y="48" font-size="13" font-family="ui-monospace, SF Mono, Menlo, monospace" fill="#0F1F2E">https://airbnb.com/rooms/57892341</text>
+    <!-- Paste shortcut -->
+    <g transform="translate(284, 24)">
+      <rect width="32" height="32" rx="8" fill="#0E7C7B" opacity="0.10"/>
+      <g transform="translate(8, 8)" stroke="#0E7C7B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="12" height="13" rx="1"/>
+        <path d="M5 3 v-1 h6 v1"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Status: extracting -->
+  <g transform="translate(24, 200)">
+    <rect width="327" height="40" rx="20" fill="#0E7C7B" opacity="0.08"/>
+    <g transform="translate(14, 12)">
+      <circle cx="8" cy="8" r="6" fill="none" stroke="#0E7C7B" stroke-width="2" stroke-dasharray="6 3"/>
+    </g>
+    <text x="40" y="26" font-size="13" font-weight="600" fill="#0E7C7B">Reading the page…</text>
+  </g>
+
+  <!-- Preview card -->
+  <g transform="translate(24, 260)">
+    <rect width="327" height="328" rx="20" fill="#FFFFFF"/>
+
+    <!-- Hero image placeholder -->
+    <g transform="translate(0, 0)">
+      <defs>
+        <linearGradient id="hero1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FF7A59" stop-opacity="0.35"/>
+          <stop offset="1" stop-color="#0E7C7B" stop-opacity="0.45"/>
+        </linearGradient>
+      </defs>
+      <path d="M0 0 h327 v140 h-327 z" fill="url(#hero1)"/>
+      <!-- stylized building silhouette -->
+      <path d="M30 140 v-30 h20 v-50 h30 v-40 h20 v40 h25 v60 h30 v-20 h20 v40 z" fill="#FFFFFF" opacity="0.5"/>
+      <path d="M170 140 v-50 h30 v-30 h25 v-20 h40 v100z" fill="#FFFFFF" opacity="0.35"/>
+      <!-- Source badge -->
+      <g transform="translate(16, 16)">
+        <rect width="84" height="26" rx="13" fill="#FFFFFF"/>
+        <circle cx="14" cy="13" r="5" fill="#FF385C"/>
+        <text x="26" y="18" font-size="12" font-weight="600" fill="#0F1F2E">Airbnb</text>
+      </g>
+    </g>
+
+    <!-- Details -->
+    <g transform="translate(20, 156)">
+      <text font-size="17" font-weight="600" fill="#0F1F2E">Loft in Castle District</text>
+      <text y="22" font-size="13" fill="#5A6B7A">Budapest, Hungary · 1 bedroom · 2 guests</text>
+
+      <!-- Fields -->
+      <g transform="translate(0, 48)">
+        <text font-size="11" font-weight="600" fill="#92A1AE">CHECK-IN</text>
+        <text y="20" font-size="15" font-weight="600" fill="#0F1F2E">Jun 14, 2026</text>
+        <text y="36" font-size="12" fill="#5A6B7A">3:00 PM</text>
+      </g>
+      <g transform="translate(120, 48)">
+        <text font-size="11" font-weight="600" fill="#92A1AE">CHECK-OUT</text>
+        <text y="20" font-size="15" font-weight="600" fill="#0F1F2E">Jun 17, 2026</text>
+        <text y="36" font-size="12" fill="#5A6B7A">11:00 AM</text>
+      </g>
+      <g transform="translate(240, 48)">
+        <text font-size="11" font-weight="600" fill="#92A1AE">TOTAL</text>
+        <text y="20" font-size="15" font-weight="600" fill="#0F1F2E">€385</text>
+        <text y="36" font-size="12" fill="#5A6B7A">3 nights</text>
+      </g>
+
+      <!-- Confidence -->
+      <g transform="translate(0, 112)">
+        <rect width="287" height="32" rx="8" fill="#2DA771" opacity="0.10"/>
+        <g transform="translate(10, 8)" fill="#2DA771">
+          <circle cx="8" cy="8" r="8"/>
+          <polyline points="5,8 7,10 11,6" stroke="#FFFFFF" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        </g>
+        <text x="32" y="21" font-size="12" font-weight="600" fill="#2DA771">Looks good · 6 of 6 key fields found</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Trip picker -->
+  <g transform="translate(24, 608)">
+    <text font-size="13" font-weight="600" fill="#5A6B7A">ADD TO TRIP</text>
+    <rect y="14" width="327" height="48" rx="12" fill="#FFFFFF" stroke="#E5EBF0"/>
+    <text x="16" y="44" font-size="15" font-weight="600" fill="#0F1F2E">Budapest → Prague → Croatia</text>
+    <g transform="translate(298, 28)" stroke="#92A1AE" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,0 6,6 12,0"/>
+    </g>
+  </g>
+
+  <!-- Bottom CTA -->
+  <g transform="translate(0, 706)">
+    <rect width="375" height="72" fill="#FFFFFF"/>
+    <line x1="0" y1="0" x2="375" y2="0" stroke="#E5EBF0"/>
+    <g transform="translate(24, 12)">
+      <rect width="327" height="48" rx="12" fill="#0E7C7B"/>
+      <text x="163.5" y="32" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">Add to trip</text>
+    </g>
+  </g>
+
+  <!-- Home indicator -->
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

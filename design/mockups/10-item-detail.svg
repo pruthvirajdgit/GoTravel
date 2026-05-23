@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>10 — Item detail (bottom sheet over map)</title>
+
+  <!-- Map background (dimmed) -->
+  <defs>
+    <linearGradient id="mapBg10" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DDE8E6"/>
+      <stop offset="1" stop-color="#C4D8D7"/>
+    </linearGradient>
+  </defs>
+  <rect width="375" height="812" fill="url(#mapBg10)"/>
+  <path d="M-20 280 Q60 240 140 270 T320 290 L395 320 v60 H-20 Z" fill="#B6D6D4" opacity="0.7"/>
+  <g stroke="#FFFFFF" stroke-width="3" opacity="0.7" fill="none" stroke-linecap="round">
+    <path d="M-10 200 L200 280 L380 230"/>
+    <path d="M40 100 L120 320"/>
+  </g>
+  <!-- The item's pin (highlighted) -->
+  <g transform="translate(170, 240)">
+    <circle cx="16" cy="16" r="34" fill="#0E7C7B" opacity="0.18"/>
+    <circle cx="16" cy="16" r="24" fill="#0E7C7B" opacity="0.35"/>
+    <path d="M0 16 a16 16 0 1 1 32 0 c0 12 -16 32 -16 32 s-16 -20 -16 -32z" fill="#2DA771"/>
+    <circle cx="16" cy="16" r="7" fill="#FFFFFF"/>
+    <text x="16" y="20" text-anchor="middle" font-size="9" font-weight="700" fill="#2DA771">★</text>
+  </g>
+
+  <!-- Dim overlay -->
+  <rect width="375" height="812" fill="#0F1F2E" opacity="0.15"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/></g>
+  </g>
+
+  <!-- Close pill -->
+  <g transform="translate(16, 60)">
+    <rect width="40" height="40" rx="20" fill="#FFFFFF"/>
+    <g transform="translate(12, 12)" stroke="#0F1F2E" stroke-width="2" stroke-linecap="round">
+      <line x1="0" y1="0" x2="16" y2="16"/>
+      <line x1="16" y1="0" x2="0" y2="16"/>
+    </g>
+  </g>
+
+  <!-- Bottom sheet -->
+  <g transform="translate(0, 332)">
+    <rect width="375" height="480" rx="24" fill="#FFFFFF"/>
+    <rect x="167.5" y="10" width="40" height="4" rx="2" fill="#E5EBF0"/>
+
+    <!-- Header -->
+    <g transform="translate(24, 36)">
+      <!-- icon -->
+      <rect width="48" height="48" rx="14" fill="#2DA771" opacity="0.15"/>
+      <text x="24" y="32" text-anchor="middle" font-size="20" fill="#2DA771">★</text>
+
+      <g transform="translate(60, 0)">
+        <text font-size="11" font-weight="700" fill="#5A6B7A">DAY 3 · TUE JUN 16</text>
+        <text y="22" font-size="20" font-weight="700" fill="#0F1F2E">Széchenyi Thermal Baths</text>
+        <text y="44" font-size="13" fill="#5A6B7A">Activity in Budapest</text>
+      </g>
+
+      <!-- Edit -->
+      <g transform="translate(280, 14)">
+        <rect width="48" height="32" rx="16" fill="#EDF2F5"/>
+        <text x="24" y="20" text-anchor="middle" font-size="12" font-weight="600" fill="#0F1F2E">Edit</text>
+      </g>
+    </g>
+
+    <!-- Status row -->
+    <g transform="translate(24, 108)">
+      <!-- Status pill -->
+      <rect width="76" height="28" rx="14" fill="#2DA771"/>
+      <g transform="translate(8, 8)" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="0,6 4,10 12,2"/>
+      </g>
+      <text x="48" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">BOOKED</text>
+
+      <!-- Conf code -->
+      <g transform="translate(88, 0)">
+        <rect width="160" height="28" rx="14" fill="#EDF2F5"/>
+        <text x="14" y="18" font-size="11" fill="#5A6B7A">Conf #</text>
+        <text x="50" y="18" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="11" font-weight="700" fill="#0F1F2E">SZE-2026-44871</text>
+      </g>
+    </g>
+
+    <!-- Meta grid -->
+    <g transform="translate(24, 160)">
+      <g>
+        <text font-size="11" font-weight="600" fill="#92A1AE">TIME</text>
+        <text y="22" font-size="15" font-weight="600" fill="#0F1F2E">09:00 – 10:00</text>
+        <text y="40" font-size="12" fill="#5A6B7A">1 hour</text>
+      </g>
+      <g transform="translate(120, 0)">
+        <text font-size="11" font-weight="600" fill="#92A1AE">COST</text>
+        <text y="22" font-size="15" font-weight="600" fill="#0F1F2E">12,000 HUF</text>
+        <text y="40" font-size="12" fill="#5A6B7A">≈ €30 · per person</text>
+      </g>
+      <g transform="translate(248, 0)">
+        <text font-size="11" font-weight="600" fill="#92A1AE">PARTY</text>
+        <text y="22" font-size="15" font-weight="600" fill="#0F1F2E">×2</text>
+        <text y="40" font-size="12" fill="#5A6B7A">Maya, Anna</text>
+      </g>
+    </g>
+
+    <!-- Address -->
+    <g transform="translate(24, 234)">
+      <text font-size="11" font-weight="600" fill="#92A1AE">PLACE</text>
+      <g transform="translate(0, 16)">
+        <rect width="327" height="60" rx="12" fill="#F8FAFB"/>
+        <g transform="translate(14, 18)" stroke="#0E7C7B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="10" r="4"/>
+          <path d="M2 10 a10 10 0 1 1 20 0 c0 8 -10 18 -10 18 s-10 -10 -10 -18z"/>
+        </g>
+        <text x="42" y="26" font-size="14" font-weight="600" fill="#0F1F2E">Állatkerti krt. 9-11</text>
+        <text x="42" y="44" font-size="12" fill="#5A6B7A">1146 Budapest, Hungary</text>
+        <!-- directions -->
+        <g transform="translate(282, 18)">
+          <rect width="32" height="32" rx="10" fill="#0E7C7B" opacity="0.10"/>
+          <g transform="translate(8, 7)" stroke="#0E7C7B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 14 l14 -12 -4 16 -4 -6 -6 2z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Notes -->
+    <g transform="translate(24, 326)">
+      <text font-size="11" font-weight="600" fill="#92A1AE">NOTES</text>
+      <g transform="translate(0, 16)">
+        <rect width="327" height="64" rx="12" fill="#F8FAFB"/>
+        <text x="14" y="24" font-size="13" fill="#0F1F2E">Bring swimsuit, flip-flops, and a towel.</text>
+        <text x="14" y="44" font-size="13" fill="#0F1F2E">Outdoor pools open year-round — chess</text>
+        <text x="14" y="58" font-size="13" fill="#0F1F2E">games in the water are a Budapest classic.</text>
+      </g>
+    </g>
+
+    <!-- Footer actions -->
+    <g transform="translate(24, 416)">
+      <!-- Comments -->
+      <g>
+        <rect width="100" height="44" rx="12" fill="#EDF2F5"/>
+        <g transform="translate(14, 14)" stroke="#0F1F2E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M0 4 h16 v10 h-10 l-4 4 v-4 h-2 z"/>
+        </g>
+        <text x="42" y="28" font-size="13" font-weight="600" fill="#0F1F2E">2</text>
+      </g>
+      <!-- Attachments -->
+      <g transform="translate(108, 0)">
+        <rect width="44" height="44" rx="12" fill="#EDF2F5"/>
+        <g transform="translate(14, 12)" stroke="#0F1F2E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 4 l-9 9 a3 3 0 1 0 4 4 l9 -9 a4.5 4.5 0 1 0 -6 -6 l-9 9"/>
+        </g>
+      </g>
+      <!-- Split cost -->
+      <g transform="translate(160, 0)">
+        <rect width="100" height="44" rx="12" fill="#EDF2F5"/>
+        <text x="50" y="28" text-anchor="middle" font-size="13" font-weight="600" fill="#0F1F2E">Split cost</text>
+      </g>
+      <!-- Delete -->
+      <g transform="translate(283, 0)">
+        <rect width="44" height="44" rx="12" fill="#E5484D" opacity="0.10"/>
+        <g transform="translate(14, 12)" stroke="#E5484D" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 4 h12 M4 4 v14 a2 2 0 0 0 2 2 h4 a2 2 0 0 0 2 -2 v-14 M6 4 v-2 h4 v2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Home indicator -->
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

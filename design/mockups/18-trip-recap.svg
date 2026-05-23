@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>18 — Trip recap (POST-MVP)</title>
+
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Hero map -->
+  <defs>
+    <linearGradient id="heroBg18" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E7C7B"/>
+      <stop offset="1" stop-color="#0A5F5E"/>
+    </linearGradient>
+  </defs>
+  <rect width="375" height="360" fill="url(#heroBg18)"/>
+
+  <!-- Map graphic (stylized continents) -->
+  <g opacity="0.20" fill="#FFFFFF">
+    <path d="M40 120 q40 -20 90 -10 q30 5 50 25 q40 10 70 -10 q30 -10 60 5 q20 10 25 30 q5 25 -15 40 q-20 15 -50 10 q-30 -5 -55 10 q-40 20 -80 5 q-30 -10 -45 -35 q-15 -25 -50 -20 q-20 -10 0 -50z"/>
+  </g>
+
+  <!-- Route polyline (the trip path) -->
+  <path d="M70 180 Q120 150 170 170 Q220 200 240 250 Q220 290 200 305 L185 320" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"/>
+  <!-- Pins along route -->
+  <g fill="#FF7A59" stroke="#FFFFFF" stroke-width="2">
+    <circle cx="70" cy="180" r="8"/>
+    <circle cx="170" cy="170" r="8"/>
+    <circle cx="240" cy="250" r="8"/>
+    <circle cx="185" cy="320" r="8"/>
+  </g>
+  <g font-size="10" font-weight="700" fill="#FFFFFF">
+    <text x="84" y="174">Budapest</text>
+    <text x="184" y="164">Prague</text>
+    <text x="254" y="254">Split</text>
+    <text x="199" y="324">Hvar</text>
+  </g>
+
+  <!-- Status bar (light) -->
+  <g fill="#FFFFFF">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#FFFFFF"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#FFFFFF"/></g>
+  </g>
+
+  <!-- Close button -->
+  <g transform="translate(16, 56)">
+    <rect width="40" height="40" rx="20" fill="#FFFFFF" opacity="0.20"/>
+    <g transform="translate(12, 12)" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round">
+      <line x1="0" y1="0" x2="16" y2="16"/>
+      <line x1="16" y1="0" x2="0" y2="16"/>
+    </g>
+  </g>
+  <!-- POST-MVP pill -->
+  <g transform="translate(283, 64)">
+    <rect width="76" height="24" rx="12" fill="#FFFFFF" opacity="0.20"/>
+    <text x="38" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#FFFFFF">POST-MVP</text>
+  </g>
+
+  <!-- Wrap-up text -->
+  <g transform="translate(24, 380)">
+    <text font-size="11" font-weight="700" fill="#FF7A59">TRIP COMPLETE · JUN 14 — 26, 2026</text>
+    <text y="34" font-size="28" font-weight="700" fill="#0F1F2E">Budapest → Croatia</text>
+    <text y="60" font-size="14" fill="#5A6B7A">13 days · 4 travelers · 1 unforgettable trip</text>
+  </g>
+
+  <!-- Stats grid -->
+  <g transform="translate(24, 468)">
+    <rect width="155" height="92" rx="16" fill="#FFFFFF"/>
+    <text x="16" y="26" font-size="11" font-weight="700" fill="#92A1AE">DISTANCE</text>
+    <text x="16" y="58" font-size="26" font-weight="700" fill="#0F1F2E">1,420</text>
+    <text x="86" y="58" font-size="13" font-weight="600" fill="#5A6B7A">km</text>
+    <text x="16" y="78" font-size="12" fill="#5A6B7A">across 4 cities</text>
+
+    <g transform="translate(172, 0)">
+      <rect width="155" height="92" rx="16" fill="#FFFFFF"/>
+      <text x="16" y="26" font-size="11" font-weight="700" fill="#92A1AE">COMPLETED</text>
+      <text x="16" y="58" font-size="26" font-weight="700" fill="#0F1F2E">38</text>
+      <text x="50" y="58" font-size="13" font-weight="600" fill="#5A6B7A">/ 41 items</text>
+      <text x="16" y="78" font-size="12" fill="#2DA771">93% done</text>
+    </g>
+  </g>
+
+  <g transform="translate(24, 572)">
+    <rect width="155" height="92" rx="16" fill="#FFFFFF"/>
+    <text x="16" y="26" font-size="11" font-weight="700" fill="#92A1AE">SPENT</text>
+    <text x="16" y="58" font-size="26" font-weight="700" fill="#0F1F2E">€2,712</text>
+    <text x="16" y="78" font-size="12" fill="#5A6B7A">€128 under budget</text>
+
+    <g transform="translate(172, 0)">
+      <rect width="155" height="92" rx="16" fill="#FFFFFF"/>
+      <text x="16" y="26" font-size="11" font-weight="700" fill="#92A1AE">PHOTOS</text>
+      <text x="16" y="58" font-size="26" font-weight="700" fill="#0F1F2E">214</text>
+      <text x="16" y="78" font-size="12" fill="#5A6B7A">across 27 items</text>
+    </g>
+  </g>
+
+  <!-- Order printed book CTA -->
+  <g transform="translate(24, 676)">
+    <rect width="327" height="64" rx="16" fill="#FF7A59"/>
+    <g transform="translate(18, 18)" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 4 a2 2 0 0 1 2 -2 h20 a2 2 0 0 1 2 2 v24 a2 2 0 0 1 -2 2 h-20 a2 2 0 0 1 -2 -2z"/>
+      <path d="M6 2 v28"/>
+    </g>
+    <text x="60" y="32" font-size="14" font-weight="700" fill="#FFFFFF">Order a printed travel book</text>
+    <text x="60" y="50" font-size="11" fill="#FFFFFF" opacity="0.85">From €29 · ships in 7 days</text>
+    <g transform="translate(290, 20)" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,0 12,12 0,24"/>
+    </g>
+  </g>
+
+  <!-- Secondary action -->
+  <g transform="translate(187.5, 768)" text-anchor="middle">
+    <text font-size="13" font-weight="600" fill="#0E7C7B">Share a recap link with your crew →</text>
+  </g>
+
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>04 — Create trip: source picker</title>
+
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)">
+      <rect x="0" y="6" width="3" height="3" rx="0.5"/>
+      <rect x="5" y="4" width="3" height="5" rx="0.5"/>
+      <rect x="10" y="2" width="3" height="7" rx="0.5"/>
+      <rect x="15" y="0" width="3" height="9" rx="0.5"/>
+    </g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)">
+      <rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/>
+      <rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/>
+      <rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/>
+    </g>
+  </g>
+
+  <!-- Top app bar -->
+  <g transform="translate(0, 56)">
+    <text x="24" y="20" font-size="22" font-weight="600" fill="#0F1F2E">New trip</text>
+    <!-- Close -->
+    <g transform="translate(335, 0)" stroke="#0F1F2E" stroke-width="2" stroke-linecap="round">
+      <line x1="-8" y1="6" x2="8" y2="22"/>
+      <line x1="8" y1="6" x2="-8" y2="22"/>
+    </g>
+  </g>
+
+  <!-- Subhead -->
+  <g transform="translate(24, 116)">
+    <text font-size="15" fill="#5A6B7A">How do you want to start?</text>
+  </g>
+
+  <!-- Option 1: Paste a link -->
+  <g transform="translate(24, 156)">
+    <rect width="327" height="124" rx="16" fill="#FFFFFF"/>
+    <g transform="translate(20, 20)">
+      <rect width="56" height="56" rx="16" fill="#0E7C7B" opacity="0.10"/>
+      <g transform="translate(15, 14)" stroke="#0E7C7B" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 10 l4 -4 a5.6 5.6 0 0 1 8 8 l-6 6 a5.6 5.6 0 0 1 -8 0"/>
+        <path d="M10 16 l-4 4 a5.6 5.6 0 0 0 8 8 l6 -6 a5.6 5.6 0 0 0 0 -8"/>
+      </g>
+    </g>
+    <text x="92" y="42" font-size="17" font-weight="600" fill="#0F1F2E">Paste a booking link</text>
+    <text x="92" y="64" font-size="13" fill="#5A6B7A">Airbnb, Booking.com, Hotels, Skyscanner —</text>
+    <text x="92" y="80" font-size="13" fill="#5A6B7A">we'll extract the details.</text>
+    <!-- Chevron -->
+    <g transform="translate(294, 56)" stroke="#92A1AE" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,0 8,8 0,16"/>
+    </g>
+  </g>
+
+  <!-- Option 2: Upload spreadsheet — RECOMMENDED -->
+  <g transform="translate(24, 296)">
+    <rect width="327" height="124" rx="16" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="1.5"/>
+    <!-- "Recommended" pill -->
+    <g transform="translate(220, -12)">
+      <rect width="100" height="24" rx="12" fill="#0E7C7B"/>
+      <text x="50" y="16" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">RECOMMENDED</text>
+    </g>
+    <g transform="translate(20, 20)">
+      <rect width="56" height="56" rx="16" fill="#FF7A59" opacity="0.14"/>
+      <g transform="translate(15, 14)" stroke="#FF7A59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="2" width="20" height="24" rx="2"/>
+        <line x1="4" y1="10" x2="24" y2="10"/>
+        <line x1="4" y1="18" x2="24" y2="18"/>
+        <line x1="14" y1="2" x2="14" y2="26"/>
+      </g>
+    </g>
+    <text x="92" y="42" font-size="17" font-weight="600" fill="#0F1F2E">Upload a spreadsheet</text>
+    <text x="92" y="64" font-size="13" fill="#5A6B7A">.xlsx, .csv, or Numbers. Use any layout —</text>
+    <text x="92" y="80" font-size="13" fill="#5A6B7A">we'll map your columns for you.</text>
+    <g transform="translate(294, 56)" stroke="#92A1AE" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,0 8,8 0,16"/>
+    </g>
+  </g>
+
+  <!-- Option 3: Start blank -->
+  <g transform="translate(24, 436)">
+    <rect width="327" height="124" rx="16" fill="#FFFFFF"/>
+    <g transform="translate(20, 20)">
+      <rect width="56" height="56" rx="16" fill="#3E7BFA" opacity="0.10"/>
+      <g transform="translate(15, 14)" stroke="#3E7BFA" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="2" width="20" height="24" rx="2"/>
+        <line x1="14" y1="10" x2="14" y2="20"/>
+        <line x1="9" y1="15" x2="19" y2="15"/>
+      </g>
+    </g>
+    <text x="92" y="42" font-size="17" font-weight="600" fill="#0F1F2E">Start from scratch</text>
+    <text x="92" y="64" font-size="13" fill="#5A6B7A">Name it, set dates, and we'll open the</text>
+    <text x="92" y="80" font-size="13" fill="#5A6B7A">map. Add items as you plan.</text>
+    <g transform="translate(294, 56)" stroke="#92A1AE" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,0 8,8 0,16"/>
+    </g>
+  </g>
+
+  <!-- Option 4: Demo data -->
+  <g transform="translate(24, 576)">
+    <rect width="327" height="80" rx="16" fill="#EDF2F5"/>
+    <g transform="translate(20, 16)">
+      <rect width="48" height="48" rx="12" fill="#0E7C7B" opacity="0.12"/>
+      <g transform="translate(12, 12)" stroke="#0E7C7B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2 l3 7 7 1 -5 5 1 7 -6 -3 -6 3 1 -7 -5 -5 7 -1z"/>
+      </g>
+    </g>
+    <text x="84" y="38" font-size="15" font-weight="600" fill="#0F1F2E">Try the Budapest → Croatia demo</text>
+    <text x="84" y="58" font-size="13" fill="#5A6B7A">13 days · 41 items · 4 collaborators</text>
+    <g transform="translate(294, 36)" stroke="#5A6B7A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,0 8,8 0,16"/>
+    </g>
+  </g>
+
+  <!-- Footer note -->
+  <g transform="translate(187.5, 696)" text-anchor="middle">
+    <text font-size="12" fill="#92A1AE">Email-import (Gmail / Outlook) coming soon</text>
+  </g>
+
+  <!-- Home indicator -->
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

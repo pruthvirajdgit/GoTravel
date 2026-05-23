@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>02 — Sign in</title>
+
+  <!-- Bg -->
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)">
+      <rect x="0" y="6" width="3" height="3" rx="0.5"/>
+      <rect x="5" y="4" width="3" height="5" rx="0.5"/>
+      <rect x="10" y="2" width="3" height="7" rx="0.5"/>
+      <rect x="15" y="0" width="3" height="9" rx="0.5"/>
+    </g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)">
+      <rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/>
+      <rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/>
+      <rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/>
+    </g>
+  </g>
+
+  <!-- Brand block -->
+  <g transform="translate(24, 100)">
+    <g transform="translate(0,0)">
+      <circle cx="14" cy="14" r="14" fill="#0E7C7B"/>
+      <circle cx="14" cy="14" r="5.5" fill="#FFFFFF"/>
+    </g>
+    <text x="36" y="20" font-size="20" font-weight="700" fill="#0E7C7B">GoTravel</text>
+  </g>
+
+  <!-- Heading -->
+  <g transform="translate(24, 180)">
+    <text font-size="28" font-weight="700" fill="#0F1F2E">Welcome back</text>
+    <text y="32" font-size="15" font-weight="400" fill="#5A6B7A">Sign in to keep planning with your group.</text>
+  </g>
+
+  <!-- Apple Sign-In (App-Store mandatory) -->
+  <g transform="translate(24, 268)">
+    <rect width="327" height="56" rx="12" fill="#0F1F2E"/>
+    <g transform="translate(96, 18)" fill="#FFFFFF">
+      <path d="M14 4.5c-1.2-1.5-3-2.5-4.8-2.5-.2 2.2 1 4.3 2 5.6 1.2 1.5 3 2.6 4.8 2.5.2-2.2-1-4.3-2-5.6zm5 14.6c-.4 1-1 2-1.7 2.9-1 1.2-2.4 2.7-4.2 2.7-1.6 0-2-.9-3.9-.9-1.9 0-2.3.9-3.9.9-1.8 0-3.2-1.4-4.2-2.6C-.6 19.6-1 14.4 1.8 11.4c.9-.9 2.2-1.5 3.4-1.5 1.5 0 2.5.9 3.7.9 1.2 0 2-.9 3.7-.9 1.5 0 3.1.8 4.1 2.2-3.6 2-3 7.2 2.3 7z"/>
+    </g>
+    <text x="120" y="36" font-size="17" font-weight="600" fill="#FFFFFF">Continue with Apple</text>
+  </g>
+
+  <!-- Google Sign-In -->
+  <g transform="translate(24, 340)">
+    <rect width="327" height="56" rx="12" fill="#FFFFFF" stroke="#E5EBF0"/>
+    <g transform="translate(96, 18)">
+      <!-- G logo simplified -->
+      <path fill="#4285F4" d="M19.6 10.2c0-.7-.1-1.4-.2-2H10v3.8h5.4c-.2 1.3-.9 2.4-2 3.1v2.6h3.2c1.9-1.8 3-4.4 3-7.5z"/>
+      <path fill="#34A853" d="M10 20c2.7 0 5-0.9 6.6-2.4l-3.2-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.7-5.6-4.1H1.1v2.6C2.7 17.7 6.1 20 10 20z"/>
+      <path fill="#FBBC05" d="M4.4 11.9c-.2-.6-.3-1.2-.3-1.9s.1-1.3.3-1.9V5.5H1.1C.4 6.9 0 8.4 0 10s.4 3.1 1.1 4.5l3.3-2.6z"/>
+      <path fill="#EA4335" d="M10 4c1.5 0 2.8.5 3.8 1.5l2.9-2.9C15 1 12.7 0 10 0 6.1 0 2.7 2.3 1.1 5.5l3.3 2.6C5.2 5.7 7.4 4 10 4z"/>
+    </g>
+    <text x="120" y="36" font-size="17" font-weight="600" fill="#0F1F2E">Continue with Google</text>
+  </g>
+
+  <!-- Divider -->
+  <g transform="translate(24, 420)">
+    <line x1="0" y1="14" x2="142" y2="14" stroke="#E5EBF0"/>
+    <text x="163" y="18" text-anchor="middle" font-size="13" fill="#92A1AE">or</text>
+    <line x1="184" y1="14" x2="327" y2="14" stroke="#E5EBF0"/>
+  </g>
+
+  <!-- Email field -->
+  <g transform="translate(24, 458)">
+    <text font-size="13" font-weight="600" fill="#5A6B7A">EMAIL</text>
+    <rect y="10" width="327" height="48" rx="12" fill="#EDF2F5"/>
+    <text x="16" y="40" font-size="15" fill="#0F1F2E">maya@example.com</text>
+  </g>
+
+  <!-- Password field -->
+  <g transform="translate(24, 538)">
+    <text font-size="13" font-weight="600" fill="#5A6B7A">PASSWORD</text>
+    <rect y="10" width="327" height="48" rx="12" fill="#EDF2F5"/>
+    <text x="16" y="40" font-size="15" fill="#92A1AE" letter-spacing="4">••••••••••</text>
+    <text x="295" y="40" font-size="13" font-weight="600" fill="#0E7C7B">Show</text>
+  </g>
+
+  <!-- Sign in CTA -->
+  <g transform="translate(24, 618)">
+    <rect width="327" height="56" rx="12" fill="#0E7C7B"/>
+    <text x="163.5" y="36" text-anchor="middle" font-size="17" font-weight="600" fill="#FFFFFF">Sign in</text>
+  </g>
+
+  <!-- Magic link + forgot -->
+  <g transform="translate(187.5, 696)" text-anchor="middle">
+    <text font-size="14" fill="#0E7C7B" font-weight="600">Email me a magic link instead</text>
+    <text y="24" font-size="13" fill="#5A6B7A">No account? <tspan fill="#0E7C7B" font-weight="600">Create one</tspan></text>
+  </g>
+
+  <!-- Home indicator -->
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

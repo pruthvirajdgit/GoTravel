@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=1280"/>
+<title>GoTravel · User-journey mockups</title>
+<style>
+  :root {
+    --bg: #F8FAFB;
+    --surface: #FFFFFF;
+    --text: #0F1F2E;
+    --muted: #5A6B7A;
+    --primary: #0E7C7B;
+    --accent: #FF7A59;
+    --border: #E5EBF0;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: Inter, -apple-system, system-ui, sans-serif; }
+  header {
+    position: sticky; top: 0; z-index: 10; background: var(--text); color: #fff;
+    padding: 16px 32px; display: flex; align-items: center; gap: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  header .logo {
+    width: 32px; height: 32px; border-radius: 8px; background: var(--primary);
+    display: grid; place-items: center; color: #fff; font-weight: 700;
+  }
+  header h1 { font-size: 18px; font-weight: 700; margin: 0; }
+  header .meta { font-size: 12px; opacity: 0.7; margin-left: auto; }
+  header a { color: #FF7A59; text-decoration: none; font-size: 13px; font-weight: 600; }
+
+  nav.flow {
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 12px 32px; display: flex; gap: 8px; overflow-x: auto;
+    position: sticky; top: 64px; z-index: 9;
+  }
+  nav.flow a {
+    flex: 0 0 auto; padding: 8px 14px; border-radius: 999px;
+    background: var(--bg); color: var(--text); text-decoration: none;
+    font-size: 12px; font-weight: 600; border: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  nav.flow a:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+  nav.flow a.section { background: transparent; border: 0; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px; padding: 8px 4px; }
+
+  .section-heading {
+    padding: 40px 32px 12px; max-width: 1400px;
+  }
+  .section-heading h2 { font-size: 22px; margin: 0 0 6px; }
+  .section-heading p { color: var(--muted); margin: 0; font-size: 14px; max-width: 720px; }
+
+  .grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 32px; padding: 24px 32px 48px; max-width: 1400px;
+  }
+  .card {
+    background: var(--surface); border-radius: 24px; padding: 20px;
+    box-shadow: 0 1px 2px rgba(15,31,46,0.04), 0 8px 24px rgba(15,31,46,0.06);
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(15,31,46,0.06), 0 16px 40px rgba(15,31,46,0.10); }
+  .card .frame {
+    width: 250px; height: 542px; border-radius: 36px; overflow: hidden;
+    background: #000; padding: 6px;
+    box-shadow: 0 0 0 1px rgba(15,31,46,0.10), inset 0 0 0 2px rgba(255,255,255,0.04);
+  }
+  .card .frame .inner {
+    width: 100%; height: 100%; border-radius: 30px; overflow: hidden; background: #fff;
+    position: relative;
+  }
+  .card .frame img, .card .frame object {
+    width: 100%; height: 100%; display: block; pointer-events: none;
+  }
+  .card .label {
+    font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: 0.5px;
+  }
+  .card .title { font-size: 14px; font-weight: 600; text-align: center; }
+  .card .pill {
+    display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px;
+    border-radius: 999px; background: rgba(14,124,123,0.10); color: var(--primary);
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .card .pill.post { background: rgba(255,122,89,0.14); color: var(--accent); }
+  .card a.open {
+    font-size: 12px; font-weight: 600; color: var(--primary); text-decoration: none;
+  }
+
+  footer {
+    background: var(--text); color: #fff; padding: 32px; text-align: center;
+    font-size: 13px; opacity: 0.9;
+  }
+  footer a { color: #FF7A59; text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">G</div>
+  <h1>GoTravel · User-journey mockups</h1>
+  <div class="meta">18 screens · 375×812 SVG · Figma-import ready</div>
+  <a href="README.md">Handoff README →</a>
+</header>
+
+<nav class="flow">
+  <span class="section">Onboarding</span>
+  <a href="#s01">01 Splash</a>
+  <a href="#s02">02 Sign in</a>
+  <a href="#s03">03 Home (empty)</a>
+  <span class="section">Create trip</span>
+  <a href="#s04">04 Source picker</a>
+  <a href="#s05a">05a Upload</a>
+  <a href="#s05b">05b Mapping</a>
+  <a href="#s05c">05c Imported</a>
+  <a href="#s06">06 Paste link</a>
+  <span class="section">Plan</span>
+  <a href="#s07">07 Home (full)</a>
+  <a href="#s08">08 Map view</a>
+  <a href="#s09">09 Day view</a>
+  <a href="#s10">10 Item detail</a>
+  <a href="#s11">11 Add item</a>
+  <a href="#s12">12 Budget</a>
+  <span class="section">Collaborate</span>
+  <a href="#s13">13 Share</a>
+  <a href="#s14">14 Live presence</a>
+  <a href="#s15">15 Comments</a>
+  <span class="section">Tools</span>
+  <a href="#s16">16 Debug</a>
+  <span class="section">Travel (post-MVP)</span>
+  <a href="#s17">17 Trip mode</a>
+  <a href="#s18">18 Recap</a>
+</nav>
+
+<section class="section-heading" id="onboarding">
+  <h2>1 · Onboarding</h2>
+  <p>First-run impressions. Mandatory Apple Sign-In on iOS, plus Google and email/magic-link. Empty-state home points the user straight at "Create a trip" with a demo-data escape hatch.</p>
+</section>
+<div class="grid">
+  <a class="card" href="mockups/01-splash.svg" target="_blank" id="s01">
+    <div class="frame"><div class="inner"><object data="mockups/01-splash.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">01</span><div class="title">Splash</div><span class="pill">MVP</span>
+  </a>
+  <a class="card" href="mockups/02-signin.svg" target="_blank" id="s02">
+    <div class="frame"><div class="inner"><object data="mockups/02-signin.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">02</span><div class="title">Sign in</div><span class="pill">MVP</span>
+  </a>
+  <a class="card" href="mockups/03-home-empty.svg" target="_blank" id="s03">
+    <div class="frame"><div class="inner"><object data="mockups/03-home-empty.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">03</span><div class="title">Home (empty state)</div><span class="pill">MVP</span>
+  </a>
+</div>
+
+<section class="section-heading" id="create">
+  <h2>2 · Create a trip</h2>
+  <p>Three first-class input paths: link paste, Excel/CSV upload (the canonical demo path — deterministic and offline-safe), and a blank start. The Excel branch shows file → column mapping → success.</p>
+</section>
+<div class="grid">
+  <a class="card" href="mockups/04-create-trip.svg" target="_blank" id="s04">
+    <div class="frame"><div class="inner"><object data="mockups/04-create-trip.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">04</span><div class="title">Source picker</div><span class="pill">MVP</span>
+  </a>
+  <a class="card" href="mockups/05a-excel-upload.svg" target="_blank" id="s05a">
+    <div class="frame"><div class="inner"><object data="mockups/05a-excel-upload.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">05a</span><div class="title">Excel upload</div><span class="pill">MVP · DEMO PATH</span>
+  </a>
+  <a class="card" href="mockups/05b-excel-column-mapping.svg" target="_blank" id="s05b">
+    <div class="frame"><div class="inner"><object data="mockups/05b-excel-column-mapping.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">05b</span><div class="title">Column mapping</div><span class="pill">MVP · DEMO PATH</span>
+  </a>
+  <a class="card" href="mockups/05c-excel-import-success.svg" target="_blank" id="s05c">
+    <div class="frame"><div class="inner"><object data="mockups/05c-excel-import-success.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">05c</span><div class="title">Import success</div><span class="pill">MVP · DEMO PATH</span>
+  </a>
+  <a class="card" href="mockups/06-paste-link.svg" target="_blank" id="s06">
+    <div class="frame"><div class="inner"><object data="mockups/06-paste-link.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">06</span><div class="title">Paste a link</div><span class="pill">MVP</span>
+  </a>
+</div>
+
+<section class="section-heading" id="plan">
+  <h2>3 · Plan &amp; explore</h2>
+  <p>The map-first heart of the app. Trip list with hero-map cards, then drill into a trip: map view (primary), day list, item detail, add-item search, budget summary.</p>
+</section>
+<div class="grid">
+  <a class="card" href="mockups/07-home-populated.svg" target="_blank" id="s07">
+    <div class="frame"><div class="inner"><object data="mockups/07-home-populated.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">07</span><div class="title">Home (populated)</div><span class="pill">MVP</span>
+  </a>
+  <a class="card" href="mockups/08-trip-map-view.svg" target="_blank" id="s08">
+    <div class="frame"><div class="inner"><object data="mockups/08-trip-map-view.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">08</span><div class="title">Trip map view</div><span class="pill">MVP · HERO</span>
+  </a>
+  <a class="card" href="mockups/09-trip-day-view.svg" target="_blank" id="s09">
+    <div class="frame"><div class="inner"><object data="mockups/09-trip-day-view.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">09</span><div class="title">Day list view</div><span class="pill">MVP</span>
+  </a>
+  <a class="card" href="mockups/10-item-detail.svg" target="_blank" id="s10">
+    <div class="frame"><div class="inner"><object data="mockups/10-item-detail.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">10</span><div class="title">Item detail</div><span class="pill">MVP</span>
+  </a>
+  <a class="card" href="mockups/11-add-item-search.svg" target="_blank" id="s11">
+    <div class="frame"><div class="inner"><object data="mockups/11-add-item-search.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">11</span><div class="title">Add item · search</div><span class="pill">MVP</span>
+  </a>
+  <a class="card" href="mockups/12-budget-summary.svg" target="_blank" id="s12">
+    <div class="frame"><div class="inner"><object data="mockups/12-budget-summary.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">12</span><div class="title">Budget summary</div><span class="pill">MVP</span>
+  </a>
+</div>
+
+<section class="section-heading" id="collab">
+  <h2>4 · Collaborate live</h2>
+  <p>What sets GoTravel apart: real-time presence, cursors, edits, and threaded comments with @-mentions — all powered by the three-component realtime stack (PowerSync + Y.js + Supabase Presence).</p>
+</section>
+<div class="grid">
+  <a class="card" href="mockups/13-share-collaborators.svg" target="_blank" id="s13">
+    <div class="frame"><div class="inner"><object data="mockups/13-share-collaborators.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">13</span><div class="title">Share &amp; collaborators</div><span class="pill">MVP</span>
+  </a>
+  <a class="card" href="mockups/14-live-presence.svg" target="_blank" id="s14">
+    <div class="frame"><div class="inner"><object data="mockups/14-live-presence.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">14</span><div class="title">Live presence on map</div><span class="pill">MVP · HERO</span>
+  </a>
+  <a class="card" href="mockups/15-comments-mentions.svg" target="_blank" id="s15">
+    <div class="frame"><div class="inner"><object data="mockups/15-comments-mentions.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">15</span><div class="title">Comments &amp; @-mentions</div><span class="pill">MVP</span>
+  </a>
+</div>
+
+<section class="section-heading" id="tools">
+  <h2>5 · Internal tools</h2>
+  <p>Hidden long-press-the-logo screen that loads the canonical Budapest→Croatia fixture, simulates offline, and surfaces sync state.</p>
+</section>
+<div class="grid">
+  <a class="card" href="mockups/16-debug-menu.svg" target="_blank" id="s16">
+    <div class="frame"><div class="inner"><object data="mockups/16-debug-menu.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">16</span><div class="title">Debug menu</div><span class="pill">INTERNAL</span>
+  </a>
+</div>
+
+<section class="section-heading" id="postmvp">
+  <h2>6 · On the road (post-MVP)</h2>
+  <p>Day-of-travel and post-trip surfaces. Banner-flagged as post-MVP — included in the journey so the long arc is clear before we build it.</p>
+</section>
+<div class="grid">
+  <a class="card" href="mockups/17-trip-mode-active.svg" target="_blank" id="s17">
+    <div class="frame"><div class="inner"><object data="mockups/17-trip-mode-active.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">17</span><div class="title">Trip mode (day-of)</div><span class="pill post">POST-MVP</span>
+  </a>
+  <a class="card" href="mockups/18-trip-recap.svg" target="_blank" id="s18">
+    <div class="frame"><div class="inner"><object data="mockups/18-trip-recap.svg" type="image/svg+xml"></object></div></div>
+    <span class="label">18</span><div class="title">Trip recap</div><span class="pill post">POST-MVP</span>
+  </a>
+</div>
+
+<footer>
+  Design system: <a href="design-system.md">design-system.md</a> ·
+  Journey map: <a href="journey.md">journey.md</a> ·
+  Handoff: <a href="README.md">README.md</a><br/>
+  Fixture: <code>fixtures/sample-trip-budapest-prague-croatia.json</code> — Budapest → Prague → Split → Hvar · 13 days · 41 items · 4 members
+</footer>
+
+</body>
+</html>

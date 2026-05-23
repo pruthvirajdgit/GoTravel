@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>05a — Excel upload: pick file</title>
+
+  <rect width="375" height="812" fill="#F8FAFB"/>
+
+  <!-- Status bar -->
+  <g fill="#0F1F2E">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)">
+      <rect x="0" y="6" width="3" height="3" rx="0.5"/>
+      <rect x="5" y="4" width="3" height="5" rx="0.5"/>
+      <rect x="10" y="2" width="3" height="7" rx="0.5"/>
+      <rect x="15" y="0" width="3" height="9" rx="0.5"/>
+    </g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#0F1F2E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)">
+      <rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#0F1F2E" stroke-width="1"/>
+      <rect x="22" y="3" width="2" height="4" rx="0.5" fill="#0F1F2E"/>
+      <rect x="2" y="2" width="14" height="6" rx="1" fill="#0F1F2E"/>
+    </g>
+  </g>
+
+  <!-- Top app bar -->
+  <g transform="translate(0, 56)">
+    <!-- Back -->
+    <g transform="translate(20, 0)" stroke="#0F1F2E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="14,4 4,14 14,24"/>
+    </g>
+    <text x="48" y="20" font-size="17" font-weight="600" fill="#0F1F2E">Upload a spreadsheet</text>
+    <text x="48" y="38" font-size="13" fill="#5A6B7A">Step 1 of 3</text>
+  </g>
+
+  <!-- Stepper -->
+  <g transform="translate(24, 122)">
+    <rect width="327" height="4" rx="2" fill="#E5EBF0"/>
+    <rect width="109" height="4" rx="2" fill="#0E7C7B"/>
+  </g>
+
+  <!-- Dropzone -->
+  <g transform="translate(24, 158)">
+    <rect width="327" height="280" rx="20" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="2" stroke-dasharray="6 4"/>
+
+    <!-- Icon -->
+    <g transform="translate(143.5, 56)">
+      <rect width="40" height="48" rx="6" fill="#0E7C7B" opacity="0.12"/>
+      <g transform="translate(8, 10)" stroke="#0E7C7B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="0" y1="6" x2="24" y2="6"/>
+        <line x1="0" y1="14" x2="24" y2="14"/>
+        <line x1="0" y1="22" x2="24" y2="22"/>
+        <line x1="8" y1="0" x2="8" y2="28"/>
+        <line x1="16" y1="0" x2="16" y2="28"/>
+      </g>
+    </g>
+
+    <text x="163.5" y="156" text-anchor="middle" font-size="17" font-weight="600" fill="#0F1F2E">Drop a file here</text>
+    <text x="163.5" y="180" text-anchor="middle" font-size="13" fill="#5A6B7A">or tap below to browse</text>
+
+    <!-- Browse button -->
+    <g transform="translate(83, 204)">
+      <rect width="160" height="48" rx="12" fill="#0E7C7B"/>
+      <text x="80" y="32" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">Browse files</text>
+    </g>
+  </g>
+
+  <!-- File types -->
+  <g transform="translate(24, 458)">
+    <text font-size="13" font-weight="600" fill="#5A6B7A">SUPPORTED FORMATS</text>
+    <g transform="translate(0, 16)">
+      <g>
+        <rect width="64" height="28" rx="14" fill="#EDF2F5"/>
+        <text x="32" y="19" text-anchor="middle" font-size="12" font-weight="600" fill="#0F1F2E">.xlsx</text>
+      </g>
+      <g transform="translate(72, 0)">
+        <rect width="64" height="28" rx="14" fill="#EDF2F5"/>
+        <text x="32" y="19" text-anchor="middle" font-size="12" font-weight="600" fill="#0F1F2E">.csv</text>
+      </g>
+      <g transform="translate(144, 0)">
+        <rect width="64" height="28" rx="14" fill="#EDF2F5"/>
+        <text x="32" y="19" text-anchor="middle" font-size="12" font-weight="600" fill="#0F1F2E">.numbers</text>
+      </g>
+      <g transform="translate(216, 0)">
+        <rect width="64" height="28" rx="14" fill="#EDF2F5"/>
+        <text x="32" y="19" text-anchor="middle" font-size="12" font-weight="600" fill="#0F1F2E">.tsv</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Helper card: template -->
+  <g transform="translate(24, 538)">
+    <rect width="327" height="92" rx="16" fill="#FFFFFF"/>
+    <g transform="translate(16, 16)">
+      <rect width="40" height="48" rx="6" fill="#FF7A59" opacity="0.14"/>
+      <g transform="translate(8, 10)" stroke="#FF7A59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M0 0 h20 v28 h-20 z"/>
+        <line x1="4" y1="8" x2="16" y2="8"/>
+        <line x1="4" y1="14" x2="16" y2="14"/>
+        <line x1="4" y1="20" x2="12" y2="20"/>
+      </g>
+    </g>
+    <text x="72" y="36" font-size="15" font-weight="600" fill="#0F1F2E">First time?</text>
+    <text x="72" y="56" font-size="13" fill="#5A6B7A">Download our template — already filled</text>
+    <text x="72" y="72" font-size="13" fill="#5A6B7A">with the Budapest demo trip.</text>
+    <text x="296" y="60" text-anchor="end" font-size="13" font-weight="600" fill="#0E7C7B">Get it</text>
+  </g>
+
+  <!-- Privacy note -->
+  <g transform="translate(187.5, 668)" text-anchor="middle">
+    <text font-size="12" fill="#5A6B7A">🔒 Your file is parsed on your device.</text>
+    <text y="18" font-size="12" fill="#5A6B7A">Nothing uploaded unless we need help reading it.</text>
+  </g>
+
+  <!-- Home indicator -->
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#0F1F2E" opacity="0.85"/>
+</svg>

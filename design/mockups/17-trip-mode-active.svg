@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>17 — Trip mode (day-of, POST-MVP)</title>
+
+  <!-- Map background -->
+  <defs>
+    <linearGradient id="mapBg17" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DDE8E6"/>
+      <stop offset="1" stop-color="#C4D8D7"/>
+    </linearGradient>
+  </defs>
+  <rect width="375" height="812" fill="url(#mapBg17)"/>
+  <path d="M-20 280 Q60 240 140 270 T320 290 L395 320 v100 H-20 Z" fill="#B6D6D4" opacity="0.7"/>
+  <g stroke="#FFFFFF" stroke-width="3" opacity="0.7" fill="none" stroke-linecap="round">
+    <path d="M-10 240 L200 320 L380 270"/>
+    <path d="M40 140 L120 360"/>
+  </g>
+
+  <!-- Route polyline w/ progress (solid = done, dashed = upcoming) -->
+  <path d="M80 280 L150 320 L210 360" stroke="#2DA771" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M210 360 L260 410 L320 450" stroke="#0E7C7B" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="3 6"/>
+
+  <!-- Completed pins -->
+  <g transform="translate(64, 256)">
+    <path d="M0 16 a16 16 0 1 1 32 0 c0 12 -16 32 -16 32 s-16 -20 -16 -32z" fill="#92A1AE"/>
+    <circle cx="16" cy="16" r="7" fill="#FFFFFF"/>
+    <text x="16" y="20" text-anchor="middle" font-size="10" font-weight="700" fill="#2DA771">✓</text>
+  </g>
+  <g transform="translate(134, 296)">
+    <path d="M0 16 a16 16 0 1 1 32 0 c0 12 -16 32 -16 32 s-16 -20 -16 -32z" fill="#92A1AE"/>
+    <circle cx="16" cy="16" r="7" fill="#FFFFFF"/>
+    <text x="16" y="20" text-anchor="middle" font-size="10" font-weight="700" fill="#2DA771">✓</text>
+  </g>
+
+  <!-- Current pin (NEXT) with pulse -->
+  <g transform="translate(194, 336)">
+    <circle cx="16" cy="16" r="34" fill="#FF7A59" opacity="0.18"/>
+    <circle cx="16" cy="16" r="24" fill="#FF7A59" opacity="0.35"/>
+    <path d="M0 16 a16 16 0 1 1 32 0 c0 12 -16 32 -16 32 s-16 -20 -16 -32z" fill="#FF7A59"/>
+    <circle cx="16" cy="16" r="7" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Future pins -->
+  <g transform="translate(244, 386)">
+    <path d="M0 14 a14 14 0 1 1 28 0 c0 11 -14 28 -14 28 s-14 -18 -14 -28z" fill="#0E7C7B" opacity="0.7"/>
+    <circle cx="14" cy="14" r="6" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(308, 426)">
+    <path d="M0 14 a14 14 0 1 1 28 0 c0 11 -14 28 -14 28 s-14 -18 -14 -28z" fill="#0E7C7B" opacity="0.7"/>
+    <circle cx="14" cy="14" r="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- User GPS dot -->
+  <g transform="translate(178, 372)">
+    <circle cx="0" cy="0" r="22" fill="#3E7BFA" opacity="0.20"/>
+    <circle cx="0" cy="0" r="12" fill="#3E7BFA" opacity="0.30"/>
+    <circle cx="0" cy="0" r="8" fill="#3E7BFA" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+
+  <!-- Status bar (light) -->
+  <g fill="#FFFFFF">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#FFFFFF"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#FFFFFF"/></g>
+  </g>
+
+  <!-- Top: TRIP MODE banner -->
+  <g transform="translate(0, 44)">
+    <defs>
+      <linearGradient id="bannerBg" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#0E7C7B"/>
+        <stop offset="1" stop-color="#0A5F5E"/>
+      </linearGradient>
+    </defs>
+    <rect width="375" height="56" fill="url(#bannerBg)"/>
+    <g transform="translate(20, 16)">
+      <circle cx="12" cy="12" r="6" fill="#FF7A59"/>
+      <circle cx="12" cy="12" r="11" fill="none" stroke="#FF7A59" stroke-width="2" opacity="0.4"/>
+    </g>
+    <text x="50" y="32" font-size="14" font-weight="700" fill="#FFFFFF">TRIP MODE · DAY 3</text>
+    <text x="50" y="48" font-size="11" fill="#FFFFFF" opacity="0.75">Budapest · Tue Jun 16</text>
+    <!-- POST-MVP pill -->
+    <g transform="translate(284, 16)">
+      <rect width="76" height="24" rx="12" fill="#FFFFFF" opacity="0.18"/>
+      <text x="38" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#FFFFFF">POST-MVP</text>
+    </g>
+  </g>
+
+  <!-- Done strip -->
+  <g transform="translate(16, 116)">
+    <rect width="343" height="64" rx="16" fill="#FFFFFF" opacity="0.95"/>
+    <text x="16" y="22" font-size="11" font-weight="700" fill="#5A6B7A">DONE TODAY</text>
+
+    <g transform="translate(16, 32)">
+      <rect width="20" height="20" rx="10" fill="#2DA771"/>
+      <g transform="translate(4, 6)" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="0,4 4,8 12,0"/>
+      </g>
+      <text x="30" y="14" font-size="12" font-weight="600" fill="#0F1F2E">Széchenyi Baths</text>
+    </g>
+    <g transform="translate(170, 32)">
+      <rect width="20" height="20" rx="10" fill="#2DA771"/>
+      <g transform="translate(4, 6)" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="0,4 4,8 12,0"/>
+      </g>
+      <text x="30" y="14" font-size="12" font-weight="600" fill="#0F1F2E">Lunch · Hungarikum</text>
+    </g>
+  </g>
+
+  <!-- NOW card -->
+  <g transform="translate(16, 552)">
+    <rect width="343" height="244" rx="20" fill="#FFFFFF" filter="url(#shadow17)"/>
+    <defs>
+      <filter id="shadow17" x="-5%" y="-30%" width="110%" height="120%">
+        <feDropShadow dx="0" dy="-4" stdDeviation="8" flood-color="#0F1F2E" flood-opacity="0.12"/>
+      </filter>
+    </defs>
+
+    <!-- NEXT label + ETA -->
+    <g transform="translate(16, 20)">
+      <rect width="48" height="22" rx="11" fill="#FF7A59"/>
+      <text x="24" y="15" text-anchor="middle" font-size="10" font-weight="700" fill="#FFFFFF">NEXT</text>
+      <text x="60" y="16" font-size="12" font-weight="600" fill="#5A6B7A">in 47 min · 16:00</text>
+      <text x="200" y="16" font-size="12" font-weight="600" fill="#5A6B7A">·</text>
+      <text x="212" y="16" font-size="12" font-weight="600" fill="#0E7C7B">12 min walk</text>
+    </g>
+
+    <!-- Item -->
+    <g transform="translate(16, 56)">
+      <rect width="48" height="48" rx="14" fill="#F2A93B" opacity="0.18"/>
+      <text x="24" y="32" text-anchor="middle" font-size="20" fill="#F2A93B">🏛</text>
+      <text x="60" y="22" font-size="18" font-weight="700" fill="#0F1F2E">Parliament tour</text>
+      <text x="60" y="40" font-size="12" fill="#5A6B7A">Kossuth Lajos tér 1-3 · 1h</text>
+    </g>
+
+    <!-- Conf code chip -->
+    <g transform="translate(16, 120)">
+      <rect width="160" height="30" rx="15" fill="#EDF2F5"/>
+      <g transform="translate(10, 9)" stroke="#5A6B7A" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="0" y="0" width="12" height="12" rx="1.5"/>
+        <line x1="2" y1="4" x2="10" y2="4"/>
+        <line x1="2" y1="8" x2="10" y2="8"/>
+      </g>
+      <text x="34" y="20" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="11" font-weight="700" fill="#0F1F2E">PRL-2026-9831</text>
+    </g>
+    <g transform="translate(186, 120)">
+      <rect width="140" height="30" rx="15" fill="#EDF2F5"/>
+      <text x="14" y="20" font-size="11" font-weight="600" fill="#0F1F2E">9,000 HUF · ≈ €23</text>
+    </g>
+
+    <!-- Actions -->
+    <g transform="translate(16, 168)">
+      <rect width="160" height="56" rx="16" fill="#0E7C7B"/>
+      <g transform="translate(18, 18)" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12 l14 -10 -4 18 -4 -8 -6 0z"/>
+      </g>
+      <text x="100" y="34" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Navigate</text>
+    </g>
+    <g transform="translate(186, 168)">
+      <rect width="140" height="56" rx="16" fill="#EDF2F5"/>
+      <text x="70" y="34" text-anchor="middle" font-size="14" font-weight="700" fill="#0F1F2E">Mark done</text>
+    </g>
+  </g>
+
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#FFFFFF" opacity="0.85"/>
+</svg>

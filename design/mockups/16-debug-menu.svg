@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Inter, -apple-system, system-ui, sans-serif">
+  <title>16 — Debug / dev menu</title>
+
+  <rect width="375" height="812" fill="#0F1F2E"/>
+
+  <!-- Status bar (light) -->
+  <g fill="#FFFFFF">
+    <text x="32" y="29" font-size="15" font-weight="600">9:41</text>
+    <g transform="translate(310,18)"><rect x="0" y="6" width="3" height="3" rx="0.5"/><rect x="5" y="4" width="3" height="5" rx="0.5"/><rect x="10" y="2" width="3" height="7" rx="0.5"/><rect x="15" y="0" width="3" height="9" rx="0.5"/></g>
+    <path d="M335 19 q5 -5 10 0 M337 22 q3 -3 6 0 M340 25 l0 1" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(348,19)"><rect x="0" y="0" width="22" height="10" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1"/><rect x="22" y="3" width="2" height="4" rx="0.5" fill="#FFFFFF"/><rect x="2" y="2" width="14" height="6" rx="1" fill="#FFFFFF"/></g>
+  </g>
+
+  <!-- Top bar -->
+  <g transform="translate(0, 56)">
+    <g transform="translate(20, 0)" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round">
+      <line x1="-6" y1="6" x2="6" y2="20"/>
+      <line x1="6" y1="6" x2="-6" y2="20"/>
+    </g>
+    <text x="48" y="22" font-size="17" font-weight="600" fill="#FFFFFF">Debug menu</text>
+    <text x="48" y="38" font-size="12" fill="#FFFFFF" opacity="0.6">Internal builds only</text>
+  </g>
+
+  <!-- Build info -->
+  <g transform="translate(24, 116)">
+    <rect width="327" height="80" rx="14" fill="#FFFFFF" opacity="0.05"/>
+    <rect width="327" height="80" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <g transform="translate(16, 18)" font-family="ui-monospace, SF Mono, Menlo, monospace">
+      <text font-size="11" fill="#FFFFFF" opacity="0.6">VERSION</text>
+      <text y="14" font-size="13" fill="#FFFFFF">0.1.0-alpha.7 (build 142)</text>
+      <text x="170" font-size="11" fill="#FFFFFF" opacity="0.6">COMMIT</text>
+      <text x="170" y="14" font-size="13" fill="#FFFFFF">fd546a8</text>
+      <text y="34" font-size="11" fill="#FFFFFF" opacity="0.6">ENV</text>
+      <text y="48" font-size="13" fill="#FFFFFF">staging · eu-central-1</text>
+      <text x="170" y="34" font-size="11" fill="#FFFFFF" opacity="0.6">USER</text>
+      <text x="170" y="48" font-size="13" fill="#FFFFFF">u_01HZK4F2RB…</text>
+    </g>
+  </g>
+
+  <!-- Fixtures section -->
+  <g transform="translate(24, 216)">
+    <text font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.6">FIXTURES</text>
+  </g>
+
+  <g transform="translate(24, 240)">
+    <rect width="327" height="116" rx="14" fill="#FFFFFF" opacity="0.05"/>
+    <rect width="327" height="116" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.10"/>
+
+    <!-- Row 1 -->
+    <g transform="translate(16, 16)">
+      <text font-size="14" font-weight="600" fill="#FFFFFF">Load Budapest → Croatia demo</text>
+      <text y="18" font-size="11" fill="#FFFFFF" opacity="0.6">13 days · 41 items · 4 members</text>
+      <g transform="translate(252, -4)">
+        <rect width="44" height="26" rx="13" fill="#2DA771"/>
+        <text x="22" y="17" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">LOAD</text>
+      </g>
+    </g>
+    <line x1="16" y1="58" x2="311" y2="58" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <!-- Row 2 -->
+    <g transform="translate(16, 74)">
+      <text font-size="14" font-weight="600" fill="#FFFFFF">Clear all local data</text>
+      <text y="18" font-size="11" fill="#FFFFFF" opacity="0.6">Wipes SQLite + Y.Doc cache</text>
+      <g transform="translate(252, -4)">
+        <rect width="44" height="26" rx="13" fill="#E5484D"/>
+        <text x="22" y="17" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">WIPE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Sync section -->
+  <g transform="translate(24, 376)">
+    <text font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.6">SYNC &amp; OFFLINE</text>
+  </g>
+
+  <g transform="translate(24, 400)">
+    <rect width="327" height="156" rx="14" fill="#FFFFFF" opacity="0.05"/>
+    <rect width="327" height="156" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.10"/>
+
+    <g transform="translate(16, 16)">
+      <text font-size="14" font-weight="600" fill="#FFFFFF">Toggle offline mode</text>
+      <text y="18" font-size="11" fill="#FFFFFF" opacity="0.6">Simulate no network</text>
+      <!-- Toggle off -->
+      <g transform="translate(258, -2)">
+        <rect width="40" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.20"/>
+        <circle cx="11" cy="11" r="8" fill="#FFFFFF"/>
+      </g>
+    </g>
+    <line x1="16" y1="58" x2="311" y2="58" stroke="#FFFFFF" stroke-opacity="0.10"/>
+
+    <g transform="translate(16, 74)">
+      <text font-size="14" font-weight="600" fill="#FFFFFF">Show sync state overlay</text>
+      <text y="18" font-size="11" fill="#FFFFFF" opacity="0.6">Live pending-op badge on every screen</text>
+      <g transform="translate(258, -2)">
+        <rect width="40" height="22" rx="11" fill="#2DA771"/>
+        <circle cx="29" cy="11" r="8" fill="#FFFFFF"/>
+      </g>
+    </g>
+    <line x1="16" y1="116" x2="311" y2="116" stroke="#FFFFFF" stroke-opacity="0.10"/>
+
+    <g transform="translate(16, 132)">
+      <text font-size="13" font-weight="600" fill="#FFFFFF">Pending ops</text>
+      <text x="100" font-size="13" font-weight="700" fill="#2DA771">0</text>
+      <text x="140" font-size="13" font-weight="600" fill="#FFFFFF" opacity="0.6">·</text>
+      <text x="156" font-size="13" font-weight="600" fill="#FFFFFF">Y.Doc bytes</text>
+      <text x="240" font-size="13" font-weight="700" fill="#FFFFFF">12,884</text>
+    </g>
+  </g>
+
+  <!-- Feature flags -->
+  <g transform="translate(24, 576)">
+    <text font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.6">FEATURE FLAGS</text>
+  </g>
+
+  <g transform="translate(24, 600)">
+    <rect width="327" height="116" rx="14" fill="#FFFFFF" opacity="0.05"/>
+    <rect width="327" height="116" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.10"/>
+
+    <g transform="translate(16, 18)" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="13" fill="#FFFFFF">
+      <text>tripMode · POST-MVP</text>
+      <g transform="translate(242, -12)"><rect width="40" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.20"/><circle cx="11" cy="11" r="8" fill="#FFFFFF"/></g>
+      <text y="32">tripRecap · POST-MVP</text>
+      <g transform="translate(242, 20)"><rect width="40" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.20"/><circle cx="11" cy="11" r="8" fill="#FFFFFF"/></g>
+      <text y="64">llmExtraction</text>
+      <g transform="translate(242, 52)"><rect width="40" height="22" rx="11" fill="#2DA771"/><circle cx="29" cy="11" r="8" fill="#FFFFFF"/></g>
+    </g>
+  </g>
+
+  <rect x="121" y="800" width="134" height="5" rx="2.5" fill="#FFFFFF" opacity="0.85"/>
+</svg>
