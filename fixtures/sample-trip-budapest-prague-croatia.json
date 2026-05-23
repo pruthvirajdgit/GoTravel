@@ -1,0 +1,724 @@
+{
+  "$schema": "../docs/product/data-model.md",
+  "fixtureVersion": "0.1.0",
+  "fixtureName": "sample-trip-budapest-prague-croatia",
+  "generatedFor": "GoTravel UI development, Storybook, and the 'Load demo data' debug toggle",
+  "notice": "Sample data for UI development only. Place names are real; specific business names, prices, and contact details are illustrative and should not be treated as bookings.",
+
+  "users": [
+    {
+      "id": "usr_01HXMAYAORG0000000000000Z",
+      "email": "maya@example.com",
+      "display_name": "Maya Chen",
+      "avatar_url": "https://example.com/avatars/maya.png",
+      "home_currency": "CAD",
+      "locale": "en-CA",
+      "created_at": "2025-11-02T14:12:00Z"
+    },
+    {
+      "id": "usr_01HXANNAPRT0000000000000Z",
+      "email": "anna@example.com",
+      "display_name": "Anna Park",
+      "avatar_url": "https://example.com/avatars/anna.png",
+      "home_currency": "USD",
+      "locale": "en-US",
+      "created_at": "2025-11-03T09:40:00Z"
+    },
+    {
+      "id": "usr_01HXJAMESWE0000000000000Z",
+      "email": "james@example.com",
+      "display_name": "James O'Connell",
+      "avatar_url": "https://example.com/avatars/james.png",
+      "home_currency": "GBP",
+      "locale": "en-GB",
+      "created_at": "2025-11-03T10:05:00Z"
+    },
+    {
+      "id": "usr_01HXLEOPRTNR0000000000000Z",
+      "email": "leo@example.com",
+      "display_name": "Leo Müller",
+      "avatar_url": "https://example.com/avatars/leo.png",
+      "home_currency": "EUR",
+      "locale": "de-DE",
+      "created_at": "2025-11-04T18:30:00Z"
+    }
+  ],
+
+  "trip": {
+    "id": "trp_01HXBUDPRGSPU000000000000Z",
+    "title": "Central Europe + Adriatic",
+    "cover_photo_url": "https://example.com/trips/bud-prg-spu/cover.jpg",
+    "start_date": "2026-06-13",
+    "end_date": "2026-06-25",
+    "home_currency": "CAD",
+    "default_timezone": "Europe/Budapest",
+    "description": "Two days each in Budapest, Prague, then over to the Dalmatian coast for sun and seafood. Mix of must-see culture, thermal baths, and beach time. Group of 4 (Maya, Anna, James, Leo).",
+    "created_by": "usr_01HXMAYAORG0000000000000Z",
+    "created_at": "2025-11-02T14:25:00Z",
+    "updated_at": "2026-05-21T19:12:00Z",
+    "version": 47,
+    "deleted_at": null
+  },
+
+  "members": [
+    { "id": "mem_001", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "user_id": "usr_01HXMAYAORG0000000000000Z", "role": "owner",  "joined_at": "2025-11-02T14:25:00Z", "invited_by": null },
+    { "id": "mem_002", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "user_id": "usr_01HXANNAPRT0000000000000Z", "role": "editor", "joined_at": "2025-11-03T09:42:00Z", "invited_by": "usr_01HXMAYAORG0000000000000Z" },
+    { "id": "mem_003", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "user_id": "usr_01HXJAMESWE0000000000000Z", "role": "editor", "joined_at": "2025-11-03T10:11:00Z", "invited_by": "usr_01HXMAYAORG0000000000000Z" },
+    { "id": "mem_004", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "user_id": "usr_01HXLEOPRTNR0000000000000Z", "role": "commenter", "joined_at": "2025-11-04T18:35:00Z", "invited_by": "usr_01HXANNAPRT0000000000000Z" }
+  ],
+
+  "locations": [
+    { "id": "loc_bud_city",         "name": "Budapest",                       "address": "Budapest, Hungary",                              "city": "Budapest", "country_iso": "HU", "lat": 47.4979, "lng": 19.0402, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_hotel",        "name": "Hotel Rum Budapest",             "address": "Királyi Pál u. 4, 1053 Budapest",                "city": "Budapest", "country_iso": "HU", "lat": 47.4912, "lng": 19.0581, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_parliament",   "name": "Hungarian Parliament Building",  "address": "Kossuth Lajos tér 1-3, 1055 Budapest",           "city": "Budapest", "country_iso": "HU", "lat": 47.5070, "lng": 19.0456, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_castle",       "name": "Buda Castle",                    "address": "Szent György tér 2, 1014 Budapest",              "city": "Budapest", "country_iso": "HU", "lat": 47.4961, "lng": 19.0399, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_fishermans",   "name": "Fisherman's Bastion",            "address": "Szentháromság tér, 1014 Budapest",               "city": "Budapest", "country_iso": "HU", "lat": 47.5018, "lng": 19.0345, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_szechenyi",    "name": "Széchenyi Thermal Bath",         "address": "Állatkerti krt. 9-11, 1146 Budapest",            "city": "Budapest", "country_iso": "HU", "lat": 47.5189, "lng": 19.0814, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_heroes",       "name": "Heroes' Square",                 "address": "Hősök tere, 1146 Budapest",                      "city": "Budapest", "country_iso": "HU", "lat": 47.5147, "lng": 19.0778, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_szimpla",      "name": "Szimpla Kert (ruin bar)",        "address": "Kazinczy u. 14, 1075 Budapest",                  "city": "Budapest", "country_iso": "HU", "lat": 47.4969, "lng": 19.0623, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_belvarosi",    "name": "Belvárosi Disznótoros",          "address": "Király u. 1/d, 1075 Budapest",                   "city": "Budapest", "country_iso": "HU", "lat": 47.4980, "lng": 19.0581, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_central_caf",  "name": "Centrál Café",                   "address": "Károlyi u. 9, 1053 Budapest",                    "city": "Budapest", "country_iso": "HU", "lat": 47.4914, "lng": 19.0573, "timezone": "Europe/Budapest" },
+    { "id": "loc_szentendre",       "name": "Szentendre Old Town",            "address": "Fő tér, 2000 Szentendre",                        "city": "Szentendre", "country_iso": "HU", "lat": 47.6664, "lng": 19.0769, "timezone": "Europe/Budapest" },
+    { "id": "loc_bud_keleti",       "name": "Budapest Keleti railway station","address": "Kerepesi út 2-6, 1087 Budapest",                 "city": "Budapest", "country_iso": "HU", "lat": 47.5003, "lng": 19.0832, "timezone": "Europe/Budapest" },
+
+    { "id": "loc_prg_city",         "name": "Prague",                         "address": "Prague, Czech Republic",                         "city": "Prague",   "country_iso": "CZ", "lat": 50.0755, "lng": 14.4378, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_hlavni",       "name": "Praha hlavní nádraží",           "address": "Wilsonova 8, 110 00 Praha 1",                    "city": "Prague",   "country_iso": "CZ", "lat": 50.0832, "lng": 14.4357, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_hotel",        "name": "Hotel U Prince",                 "address": "Staroměstské nám. 29, 110 00 Staré Město",       "city": "Prague",   "country_iso": "CZ", "lat": 50.0875, "lng": 14.4214, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_oldtown",      "name": "Old Town Square",                "address": "Staroměstské nám., 110 00 Staré Město",          "city": "Prague",   "country_iso": "CZ", "lat": 50.0875, "lng": 14.4213, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_charles",      "name": "Charles Bridge",                 "address": "Karlův most, 110 00 Praha 1",                    "city": "Prague",   "country_iso": "CZ", "lat": 50.0865, "lng": 14.4114, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_castle",       "name": "Prague Castle",                  "address": "Hradčany, 119 08 Praha 1",                       "city": "Prague",   "country_iso": "CZ", "lat": 50.0909, "lng": 14.4006, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_jewish",       "name": "Jewish Quarter (Josefov)",       "address": "Josefov, 110 00 Praha 1",                        "city": "Prague",   "country_iso": "CZ", "lat": 50.0902, "lng": 14.4185, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_petrin",       "name": "Petřín Hill & Lookout Tower",    "address": "Petřínské sady, 118 00 Praha 1",                 "city": "Prague",   "country_iso": "CZ", "lat": 50.0838, "lng": 14.3950, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_lennon",       "name": "Lennon Wall",                    "address": "Velkopřevorské nám., 100 00 Malá Strana",        "city": "Prague",   "country_iso": "CZ", "lat": 50.0863, "lng": 14.4072, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_kutnahora",    "name": "Kutná Hora (Sedlec Ossuary)",    "address": "Zámecká, 284 03 Kutná Hora",                     "city": "Kutná Hora","country_iso": "CZ", "lat": 49.9510, "lng": 15.2680, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_u_medvidku",   "name": "U Medvídků (beer hall)",         "address": "Na Perštýně 7, 100 00 Staré Město",              "city": "Prague",   "country_iso": "CZ", "lat": 50.0830, "lng": 14.4194, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_lokal",        "name": "Lokál Dlouhááá",                 "address": "Dlouhá 33, 110 00 Staré Město",                  "city": "Prague",   "country_iso": "CZ", "lat": 50.0903, "lng": 14.4257, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_jazzdock",     "name": "Jazz Dock",                      "address": "Janáčkovo nábř. 2, 150 00 Praha 5",              "city": "Prague",   "country_iso": "CZ", "lat": 50.0780, "lng": 14.4083, "timezone": "Europe/Prague" },
+    { "id": "loc_prg_airport",      "name": "Václav Havel Airport Prague",    "address": "Aviatická 1017/2, 161 08 Praha 6",               "city": "Prague",   "country_iso": "CZ", "lat": 50.1008, "lng": 14.2632, "timezone": "Europe/Prague" },
+
+    { "id": "loc_spu_airport",      "name": "Split Airport (SPU)",            "address": "Cesta dr. Franje Tuđmana 1270, 21217 Kaštel Štafilić","city": "Split", "country_iso": "HR", "lat": 43.5390, "lng": 16.2980, "timezone": "Europe/Zagreb" },
+    { "id": "loc_spu_apt",          "name": "Apartment Riva Split",           "address": "Marmontova 3, 21000 Split",                      "city": "Split",    "country_iso": "HR", "lat": 43.5089, "lng": 16.4393, "timezone": "Europe/Zagreb" },
+    { "id": "loc_spu_diocletian",   "name": "Diocletian's Palace",            "address": "Trg Republike 1, 21000 Split",                   "city": "Split",    "country_iso": "HR", "lat": 43.5081, "lng": 16.4402, "timezone": "Europe/Zagreb" },
+    { "id": "loc_spu_marjan",       "name": "Marjan Hill",                    "address": "Šetalište Ivana Meštrovića, 21000 Split",        "city": "Split",    "country_iso": "HR", "lat": 43.5125, "lng": 16.4221, "timezone": "Europe/Zagreb" },
+    { "id": "loc_spu_bacvice",      "name": "Bačvice Beach",                  "address": "Šetalište Petra Preradovića, 21000 Split",       "city": "Split",    "country_iso": "HR", "lat": 43.5060, "lng": 16.4475, "timezone": "Europe/Zagreb" },
+    { "id": "loc_spu_konoba",       "name": "Konoba Matejuška",               "address": "Tomića stine 3, 21000 Split",                    "city": "Split",    "country_iso": "HR", "lat": 43.5071, "lng": 16.4358, "timezone": "Europe/Zagreb" },
+    { "id": "loc_spu_ferryport",    "name": "Split Ferry Port (Gat sv. Duje)","address": "Gat sv. Duje, 21000 Split",                      "city": "Split",    "country_iso": "HR", "lat": 43.5050, "lng": 16.4421, "timezone": "Europe/Zagreb" },
+
+    { "id": "loc_hva_port",         "name": "Hvar Town Port",                 "address": "Riva, 21450 Hvar",                                "city": "Hvar",     "country_iso": "HR", "lat": 43.1729, "lng": 16.4413, "timezone": "Europe/Zagreb" },
+    { "id": "loc_hva_apt",          "name": "Villa Skansi Hvar",              "address": "Križna luka 9, 21450 Hvar",                       "city": "Hvar",     "country_iso": "HR", "lat": 43.1740, "lng": 16.4475, "timezone": "Europe/Zagreb" },
+    { "id": "loc_hva_fortress",     "name": "Fortica (Spanish Fortress)",     "address": "Biskupa Jurja Dubokovića, 21450 Hvar",            "city": "Hvar",     "country_iso": "HR", "lat": 43.1770, "lng": 16.4408, "timezone": "Europe/Zagreb" },
+    { "id": "loc_hva_pakleni",      "name": "Pakleni Islands (boat day)",     "address": "Pakleni otoci, 21450",                            "city": "Hvar",     "country_iso": "HR", "lat": 43.1633, "lng": 16.4140, "timezone": "Europe/Zagreb" },
+    { "id": "loc_hva_dalmatino",    "name": "Dalmatino Hvar",                 "address": "Sv. Marak 1, 21450 Hvar",                          "city": "Hvar",     "country_iso": "HR", "lat": 43.1732, "lng": 16.4427, "timezone": "Europe/Zagreb" }
+  ],
+
+  "days": [
+    { "id": "day_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-13", "sequence": 1,  "title": "Arrival in Budapest",         "primary_location": "loc_bud_city", "notes": "Land mid-afternoon. Take it easy — first dinner near the hotel." },
+    { "id": "day_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-14", "sequence": 2,  "title": "Pest highlights + Castle Hill","primary_location": "loc_bud_city", "notes": "Big walking day. Sensible shoes." },
+    { "id": "day_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-15", "sequence": 3,  "title": "Baths & ruin bars",            "primary_location": "loc_bud_city", "notes": "Bring flip-flops for Széchenyi." },
+    { "id": "day_04", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-16", "sequence": 4,  "title": "Day trip: Szentendre",         "primary_location": "loc_bud_city", "notes": "HÉV suburban train from Batthyány tér; ~40 min." },
+    { "id": "day_05", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-17", "sequence": 5,  "title": "Train to Prague",              "primary_location": "loc_prg_city", "notes": "Long travel day. Get a snack pack at Keleti." },
+    { "id": "day_06", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-18", "sequence": 6,  "title": "Old Town & Castle",            "primary_location": "loc_prg_city", "notes": "Castle tickets booked for 14:00." },
+    { "id": "day_07", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-19", "sequence": 7,  "title": "Jewish Quarter & Petřín",      "primary_location": "loc_prg_city", "notes": "Funicular up Petřín if anyone's tired." },
+    { "id": "day_08", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-20", "sequence": 8,  "title": "Kutná Hora day trip + jazz",   "primary_location": "loc_prg_city", "notes": "Train back by 18:00 so we don't miss the Jazz Dock set." },
+    { "id": "day_09", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-21", "sequence": 9,  "title": "Fly to Split",                 "primary_location": "loc_spu_apt",  "notes": "Beach finally. Swimsuits accessible." },
+    { "id": "day_10", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-22", "sequence": 10, "title": "Split: Palace + Marjan",       "primary_location": "loc_spu_apt",  "notes": "Sunrise at Marjan if anyone's into it." },
+    { "id": "day_11", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-23", "sequence": 11, "title": "Ferry to Hvar",                "primary_location": "loc_hva_apt",  "notes": "Catamaran 13:00. Don't bring a third suitcase." },
+    { "id": "day_12", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-24", "sequence": 12, "title": "Hvar: Fortress + Pakleni boat","primary_location": "loc_hva_apt",  "notes": "Sunset from Fortica is the move." },
+    { "id": "day_13", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "date": "2026-06-25", "sequence": 13, "title": "Ferry back + fly home",        "primary_location": "loc_spu_apt",  "notes": "Early ferry. Pack the night before." }
+  ],
+
+  "items": [
+    {
+      "id": "itm_d01_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_01", "sequence": 1,
+      "type": "transit", "title": "Flight YYZ → BUD (Air Canada AC1810)",
+      "location_id": "loc_bud_city",
+      "start_time": "2026-06-12T18:25:00-04:00", "end_time": "2026-06-13T13:40:00+02:00",
+      "status": "booked", "booking_ref": "QV8X2P",
+      "cost": { "amount_minor": 124500, "currency": "CAD" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "mode": "flight", "carrier": "Air Canada", "vehicle_no": "AC1810", "from_location_id": null, "to_location_id": "loc_bud_city", "departure_time": "2026-06-12T18:25:00-04:00", "arrival_time": "2026-06-13T13:40:00+02:00", "seat": "23A", "class": "economy" },
+      "notes": "Overnight flight. Sleep on the plane.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2025-12-10T11:02:00Z", "updated_at": "2026-01-15T19:40:00Z", "version": 3
+    },
+    {
+      "id": "itm_d01_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_01", "sequence": 2,
+      "type": "lodging", "title": "Hotel Rum Budapest (4 nights)",
+      "location_id": "loc_bud_hotel",
+      "start_time": "2026-06-13T15:00:00+02:00", "end_time": "2026-06-17T11:00:00+02:00",
+      "status": "booked", "booking_ref": "RUM-2026-06-13-7741",
+      "booking_url": "https://www.hotelrumbudapest.com/",
+      "cost": { "amount_minor": 14400000, "currency": "HUF" }, "cost_split": "shared",
+      "source_url": "https://www.hotelrumbudapest.com/",
+      "extracted_from": "link",
+      "details": { "check_in": "2026-06-13T15:00:00+02:00", "check_out": "2026-06-17T11:00:00+02:00", "nights": 4, "room_type": "Two adjoining doubles", "guests_count": 4 },
+      "notes": "Two adjoining doubles on the 5th floor. Roof bar opens at 17:00.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2025-12-12T20:14:00Z", "updated_at": "2026-02-04T09:23:00Z", "version": 5
+    },
+    {
+      "id": "itm_d01_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_01", "sequence": 3,
+      "type": "meal", "title": "Casual first dinner — Belvárosi Disznótoros",
+      "location_id": "loc_bud_belvarosi",
+      "start_time": "2026-06-13T19:30:00+02:00", "duration_min": 75,
+      "status": "planned",
+      "cost": { "amount_minor": 1600000, "currency": "HUF" }, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "meal_type": "dinner", "cuisine": "Hungarian" },
+      "notes": "No reservations — order at the counter. Try the szürkemarha sausage.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-01-08T16:51:00Z", "updated_at": "2026-01-08T16:51:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d02_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_02", "sequence": 1,
+      "type": "meal", "title": "Breakfast at Centrál Café",
+      "location_id": "loc_bud_central_caf",
+      "start_time": "2026-06-14T09:00:00+02:00", "duration_min": 60,
+      "status": "planned",
+      "cost": { "amount_minor": 1200000, "currency": "HUF" }, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "meal_type": "breakfast", "cuisine": "European" },
+      "notes": "Get the eggs Benedict.",
+      "created_by": "usr_01HXANNAPRT0000000000000Z", "created_at": "2026-01-09T11:00:00Z", "updated_at": "2026-01-09T11:00:00Z", "version": 1
+    },
+    {
+      "id": "itm_d02_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_02", "sequence": 2,
+      "type": "activity", "title": "Parliament tour (English, 11:00)",
+      "location_id": "loc_bud_parliament",
+      "start_time": "2026-06-14T11:00:00+02:00", "duration_min": 60,
+      "status": "booked", "booking_ref": "PARL-EN-11-2026-06-14",
+      "booking_url": "https://jegymester.hu/eng/parlament",
+      "cost": { "amount_minor": 1200000, "currency": "HUF" }, "cost_split": "personal",
+      "source_url": "https://jegymester.hu/eng/parlament",
+      "extracted_from": "link",
+      "details": { "category": "sightseeing", "duration_min": 60, "ticket_required": true },
+      "notes": "Tickets are per-person; bring passports. Photo ID required at entry.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-01T14:30:00Z", "updated_at": "2026-02-01T14:30:00Z", "version": 1
+    },
+    {
+      "id": "itm_d02_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_02", "sequence": 3,
+      "type": "activity", "title": "Walk: Chain Bridge → Buda Castle (funicular)",
+      "location_id": "loc_bud_castle",
+      "start_time": "2026-06-14T13:30:00+02:00", "duration_min": 150,
+      "status": "planned",
+      "cost": { "amount_minor": 600000, "currency": "HUF" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 150, "ticket_required": false },
+      "notes": "Funicular is touristy but worth it. Skip if the queue is >30 min and walk up.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-02-02T09:14:00Z", "updated_at": "2026-02-02T09:14:00Z", "version": 1
+    },
+    {
+      "id": "itm_d02_04", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_02", "sequence": 4,
+      "type": "activity", "title": "Fisherman's Bastion + Matthias Church",
+      "location_id": "loc_bud_fishermans",
+      "start_time": "2026-06-14T16:00:00+02:00", "duration_min": 90,
+      "status": "planned",
+      "cost": { "amount_minor": 250000, "currency": "HUF" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 90, "ticket_required": true },
+      "notes": "Upper terraces are paid; lower terraces are free and give the same view.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-01T14:33:00Z", "updated_at": "2026-02-01T14:33:00Z", "version": 1
+    },
+    {
+      "id": "itm_d02_05", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_02", "sequence": 5,
+      "type": "meal", "title": "Dinner — Hungarian goulash (TBD)",
+      "location_id": "loc_bud_city",
+      "start_time": "2026-06-14T20:00:00+02:00", "duration_min": 90,
+      "status": "planned",
+      "cost": null, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "meal_type": "dinner", "cuisine": "Hungarian" },
+      "notes": "Anna to pick a spot — Leo allergic to paprika? confirm.",
+      "created_by": "usr_01HXANNAPRT0000000000000Z", "created_at": "2026-02-02T19:12:00Z", "updated_at": "2026-04-18T10:01:00Z", "version": 4
+    },
+
+    {
+      "id": "itm_d03_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_03", "sequence": 1,
+      "type": "activity", "title": "Széchenyi Thermal Bath (morning)",
+      "location_id": "loc_bud_szechenyi",
+      "start_time": "2026-06-15T10:00:00+02:00", "duration_min": 180,
+      "status": "planned",
+      "cost": { "amount_minor": 1100000, "currency": "HUF" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "outdoor", "duration_min": 180, "ticket_required": true },
+      "notes": "Bring flip-flops. Rent towel on-site (700 HUF).",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-02-10T07:21:00Z", "updated_at": "2026-02-10T07:21:00Z", "version": 1
+    },
+    {
+      "id": "itm_d03_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_03", "sequence": 2,
+      "type": "activity", "title": "Heroes' Square + walk through City Park",
+      "location_id": "loc_bud_heroes",
+      "start_time": "2026-06-15T14:00:00+02:00", "duration_min": 90,
+      "status": "planned",
+      "cost": null, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 90, "ticket_required": false },
+      "notes": "Right next to Széchenyi; do these together.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-02-10T07:24:00Z", "updated_at": "2026-02-10T07:24:00Z", "version": 1
+    },
+    {
+      "id": "itm_d03_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_03", "sequence": 3,
+      "type": "activity", "title": "Szimpla Kert ruin bar (evening)",
+      "location_id": "loc_bud_szimpla",
+      "start_time": "2026-06-15T21:00:00+02:00", "duration_min": 150,
+      "status": "planned",
+      "cost": { "amount_minor": 800000, "currency": "HUF" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "nightlife", "duration_min": 150, "ticket_required": false },
+      "notes": "Iconic. Gets packed after 22:30.",
+      "created_by": "usr_01HXLEOPRTNR0000000000000Z", "created_at": "2026-02-12T22:40:00Z", "updated_at": "2026-02-12T22:40:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d04_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_04", "sequence": 1,
+      "type": "transit", "title": "HÉV suburban train: Batthyány tér → Szentendre",
+      "location_id": "loc_szentendre",
+      "start_time": "2026-06-16T09:15:00+02:00", "end_time": "2026-06-16T09:55:00+02:00",
+      "status": "planned",
+      "cost": { "amount_minor": 96000, "currency": "HUF" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "mode": "train", "carrier": "BKK HÉV", "vehicle_no": "H5", "from_location_id": "loc_bud_city", "to_location_id": "loc_szentendre", "departure_time": "2026-06-16T09:15:00+02:00", "arrival_time": "2026-06-16T09:55:00+02:00" },
+      "notes": "Buy ticket at the machine; tap & ride.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-14T11:00:00Z", "updated_at": "2026-02-14T11:00:00Z", "version": 1
+    },
+    {
+      "id": "itm_d04_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_04", "sequence": 2,
+      "type": "activity", "title": "Wander Szentendre Old Town + Marzipan Museum",
+      "location_id": "loc_szentendre",
+      "start_time": "2026-06-16T10:00:00+02:00", "duration_min": 300,
+      "status": "planned",
+      "cost": { "amount_minor": 300000, "currency": "HUF" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 300, "ticket_required": false },
+      "notes": "Lunch at a Danube-side terrace.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-14T11:01:00Z", "updated_at": "2026-02-14T11:01:00Z", "version": 1
+    },
+    {
+      "id": "itm_d04_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_04", "sequence": 3,
+      "type": "meal", "title": "Farewell-to-Budapest dinner",
+      "location_id": "loc_bud_city",
+      "start_time": "2026-06-16T20:00:00+02:00", "duration_min": 120,
+      "status": "planned",
+      "cost": null, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "meal_type": "dinner", "cuisine": "Hungarian" },
+      "notes": "Pick something near the hotel — early train tomorrow.",
+      "created_by": "usr_01HXANNAPRT0000000000000Z", "created_at": "2026-02-15T18:33:00Z", "updated_at": "2026-02-15T18:33:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d05_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_05", "sequence": 1,
+      "type": "transit", "title": "EuroCity train EC 273 'Metropolitan': Budapest Keleti → Praha hl.n.",
+      "location_id": "loc_prg_hlavni",
+      "start_time": "2026-06-17T07:25:00+02:00", "end_time": "2026-06-17T14:39:00+02:00",
+      "status": "booked", "booking_ref": "MAV-EC273-2026-06-17",
+      "booking_url": "https://jegy.mav.hu/",
+      "cost": { "amount_minor": 6400000, "currency": "HUF" }, "cost_split": "personal",
+      "source_url": "https://jegy.mav.hu/",
+      "extracted_from": "link",
+      "details": { "mode": "train", "carrier": "MÁV-START / ČD", "vehicle_no": "EC 273", "from_location_id": "loc_bud_keleti", "to_location_id": "loc_prg_hlavni", "departure_time": "2026-06-17T07:25:00+02:00", "arrival_time": "2026-06-17T14:39:00+02:00", "seat": "Coach 261, seats 41-44", "class": "2nd" },
+      "notes": "Reserved 4 seats together. Dining car is decent enough.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-20T20:22:00Z", "updated_at": "2026-02-20T20:22:00Z", "version": 1
+    },
+    {
+      "id": "itm_d05_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_05", "sequence": 2,
+      "type": "lodging", "title": "Hotel U Prince (3 nights)",
+      "location_id": "loc_prg_hotel",
+      "start_time": "2026-06-17T15:30:00+02:00", "end_time": "2026-06-20T11:00:00+02:00",
+      "status": "booked", "booking_ref": "UPRINCE-2026-06-17-5519",
+      "booking_url": "https://www.hoteluprince.com/",
+      "cost": { "amount_minor": 1620000, "currency": "CZK" }, "cost_split": "shared",
+      "source_url": "https://www.hoteluprince.com/",
+      "extracted_from": "link",
+      "details": { "check_in": "2026-06-17T15:30:00+02:00", "check_out": "2026-06-20T11:00:00+02:00", "nights": 3, "room_type": "Two doubles", "guests_count": 4 },
+      "notes": "Right on Old Town Square. Rooftop terrace — go up for sunset.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-21T10:00:00Z", "updated_at": "2026-02-21T10:00:00Z", "version": 1
+    },
+    {
+      "id": "itm_d05_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_05", "sequence": 3,
+      "type": "meal", "title": "First Prague dinner — Lokál Dlouhááá",
+      "location_id": "loc_prg_lokal",
+      "start_time": "2026-06-17T20:00:00+02:00", "duration_min": 90,
+      "status": "planned",
+      "cost": { "amount_minor": 240000, "currency": "CZK" }, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "meal_type": "dinner", "cuisine": "Czech" },
+      "notes": "Classic Pilsner Urquell tankovna. No reservations.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-02-22T13:14:00Z", "updated_at": "2026-02-22T13:14:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d06_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_06", "sequence": 1,
+      "type": "activity", "title": "Old Town Square & Astronomical Clock (top of hour)",
+      "location_id": "loc_prg_oldtown",
+      "start_time": "2026-06-18T09:00:00+02:00", "duration_min": 60,
+      "status": "planned",
+      "cost": null, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 60, "ticket_required": false },
+      "notes": "Be in the square 5 min before the hour.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-22T13:20:00Z", "updated_at": "2026-02-22T13:20:00Z", "version": 1
+    },
+    {
+      "id": "itm_d06_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_06", "sequence": 2,
+      "type": "activity", "title": "Walk Charles Bridge → Malá Strana",
+      "location_id": "loc_prg_charles",
+      "start_time": "2026-06-18T10:30:00+02:00", "duration_min": 90,
+      "status": "planned",
+      "cost": null, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 90, "ticket_required": false },
+      "notes": "Get there before the crowds (yes, ha).",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-22T13:22:00Z", "updated_at": "2026-02-22T13:22:00Z", "version": 1
+    },
+    {
+      "id": "itm_d06_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_06", "sequence": 3,
+      "type": "activity", "title": "Prague Castle complex (timed entry 14:00)",
+      "location_id": "loc_prg_castle",
+      "start_time": "2026-06-18T14:00:00+02:00", "duration_min": 180,
+      "status": "booked", "booking_ref": "HRADCZ-2026-06-18-14",
+      "booking_url": "https://www.hrad.cz/",
+      "cost": { "amount_minor": 180000, "currency": "CZK" }, "cost_split": "personal",
+      "source_url": "https://www.hrad.cz/",
+      "extracted_from": "link",
+      "details": { "category": "sightseeing", "duration_min": 180, "ticket_required": true },
+      "notes": "Circuit B covers St. Vitus, Old Royal Palace, Basilica, Golden Lane.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-24T20:05:00Z", "updated_at": "2026-02-24T20:05:00Z", "version": 1
+    },
+    {
+      "id": "itm_d06_04", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_06", "sequence": 4,
+      "type": "meal", "title": "Dinner at U Medvídků (own brewery)",
+      "location_id": "loc_prg_u_medvidku",
+      "start_time": "2026-06-18T20:30:00+02:00", "duration_min": 105,
+      "status": "planned",
+      "cost": { "amount_minor": 280000, "currency": "CZK" }, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "meal_type": "dinner", "cuisine": "Czech" },
+      "notes": "Try the X-Beer 33 if anyone's brave.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-02-25T10:00:00Z", "updated_at": "2026-02-25T10:00:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d07_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_07", "sequence": 1,
+      "type": "activity", "title": "Jewish Quarter walking circuit (Josefov)",
+      "location_id": "loc_prg_jewish",
+      "start_time": "2026-06-19T10:00:00+02:00", "duration_min": 180,
+      "status": "planned",
+      "cost": { "amount_minor": 50000, "currency": "CZK" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "museum", "duration_min": 180, "ticket_required": true },
+      "notes": "Combined ticket covers 4 synagogues + cemetery. Closed Saturdays.",
+      "created_by": "usr_01HXANNAPRT0000000000000Z", "created_at": "2026-02-26T08:42:00Z", "updated_at": "2026-02-26T08:42:00Z", "version": 1
+    },
+    {
+      "id": "itm_d07_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_07", "sequence": 2,
+      "type": "activity", "title": "Lennon Wall & Kampa Island",
+      "location_id": "loc_prg_lennon",
+      "start_time": "2026-06-19T14:00:00+02:00", "duration_min": 60,
+      "status": "planned",
+      "cost": null, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 60, "ticket_required": false },
+      "notes": "Quick photo stop on the way to Petřín.",
+      "created_by": "usr_01HXLEOPRTNR0000000000000Z", "created_at": "2026-02-27T11:18:00Z", "updated_at": "2026-02-27T11:18:00Z", "version": 1
+    },
+    {
+      "id": "itm_d07_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_07", "sequence": 3,
+      "type": "activity", "title": "Funicular up Petřín + Lookout Tower",
+      "location_id": "loc_prg_petrin",
+      "start_time": "2026-06-19T15:30:00+02:00", "duration_min": 120,
+      "status": "planned",
+      "cost": { "amount_minor": 25000, "currency": "CZK" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "outdoor", "duration_min": 120, "ticket_required": true },
+      "notes": "Use Prague transit pass on the funicular.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-02-27T11:22:00Z", "updated_at": "2026-02-27T11:22:00Z", "version": 1
+    },
+    {
+      "id": "itm_d07_04", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_07", "sequence": 4,
+      "type": "note", "title": "Pick a dinner spot for tonight",
+      "location_id": null,
+      "start_time": null, "duration_min": null,
+      "status": "planned",
+      "cost": null, "cost_split": null,
+      "extracted_from": "manual",
+      "details": {},
+      "notes": "Open question. Maya wants Vietnamese, James votes for another beer hall. Decide by morning of.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-04-30T19:50:00Z", "updated_at": "2026-05-21T19:12:00Z", "version": 3
+    },
+
+    {
+      "id": "itm_d08_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_08", "sequence": 1,
+      "type": "transit", "title": "Train Praha hl.n. → Kutná Hora hl.n.",
+      "location_id": "loc_prg_kutnahora",
+      "start_time": "2026-06-20T09:08:00+02:00", "end_time": "2026-06-20T10:00:00+02:00",
+      "status": "planned",
+      "cost": { "amount_minor": 24000, "currency": "CZK" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "mode": "train", "carrier": "České dráhy", "from_location_id": "loc_prg_hlavni", "to_location_id": "loc_prg_kutnahora" },
+      "notes": "Buy tickets at the machine. Return train at 16:38.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-03-02T22:00:00Z", "updated_at": "2026-03-02T22:00:00Z", "version": 1
+    },
+    {
+      "id": "itm_d08_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_08", "sequence": 2,
+      "type": "activity", "title": "Sedlec Ossuary + St. Barbara's Church",
+      "location_id": "loc_prg_kutnahora",
+      "start_time": "2026-06-20T10:30:00+02:00", "duration_min": 300,
+      "status": "planned",
+      "cost": { "amount_minor": 36000, "currency": "CZK" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 300, "ticket_required": true },
+      "notes": "Bone church and the cathedral. Lunch in between.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-03-02T22:05:00Z", "updated_at": "2026-03-02T22:05:00Z", "version": 1
+    },
+    {
+      "id": "itm_d08_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_08", "sequence": 3,
+      "type": "activity", "title": "Jazz Dock evening set (20:30)",
+      "location_id": "loc_prg_jazzdock",
+      "start_time": "2026-06-20T20:30:00+02:00", "duration_min": 120,
+      "status": "booked", "booking_ref": "JAZZDOCK-2026-06-20-2030",
+      "booking_url": "https://www.jazzdock.cz/",
+      "cost": { "amount_minor": 80000, "currency": "CZK" }, "cost_split": "personal",
+      "source_url": "https://www.jazzdock.cz/",
+      "extracted_from": "link",
+      "details": { "category": "nightlife", "duration_min": 120, "ticket_required": true },
+      "notes": "Tickets are reserved seats — pick them up at door.",
+      "created_by": "usr_01HXLEOPRTNR0000000000000Z", "created_at": "2026-03-05T19:40:00Z", "updated_at": "2026-03-05T19:40:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d09_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_09", "sequence": 1,
+      "type": "transit", "title": "Flight PRG → SPU (Smartwings QS 1131)",
+      "location_id": "loc_spu_airport",
+      "start_time": "2026-06-21T11:55:00+02:00", "end_time": "2026-06-21T13:25:00+02:00",
+      "status": "booked", "booking_ref": "QS1131-X4P8K2",
+      "cost": { "amount_minor": 36000, "currency": "EUR" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "mode": "flight", "carrier": "Smartwings", "vehicle_no": "QS 1131", "from_location_id": "loc_prg_airport", "to_location_id": "loc_spu_airport", "departure_time": "2026-06-21T11:55:00+02:00", "arrival_time": "2026-06-21T13:25:00+02:00", "class": "economy" },
+      "notes": "Carry-on only, no checked bags booked.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-03-10T15:00:00Z", "updated_at": "2026-03-10T15:00:00Z", "version": 1
+    },
+    {
+      "id": "itm_d09_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_09", "sequence": 2,
+      "type": "lodging", "title": "Apartment Riva Split (2 nights)",
+      "location_id": "loc_spu_apt",
+      "start_time": "2026-06-21T15:00:00+02:00", "end_time": "2026-06-23T10:00:00+02:00",
+      "status": "booked", "booking_ref": "AIRBNB-RIVA-2026-06-21",
+      "booking_url": "https://www.airbnb.com/rooms/sample-riva-split",
+      "cost": { "amount_minor": 32000, "currency": "EUR" }, "cost_split": "shared",
+      "source_url": "https://www.airbnb.com/rooms/sample-riva-split",
+      "extracted_from": "link",
+      "details": { "check_in": "2026-06-21T15:00:00+02:00", "check_out": "2026-06-23T10:00:00+02:00", "nights": 2, "room_type": "2BR apartment", "guests_count": 4 },
+      "notes": "Self check-in via keypad. Hostess sends code morning of.",
+      "created_by": "usr_01HXANNAPRT0000000000000Z", "created_at": "2026-03-11T12:33:00Z", "updated_at": "2026-03-11T12:33:00Z", "version": 1
+    },
+    {
+      "id": "itm_d09_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_09", "sequence": 3,
+      "type": "meal", "title": "Dinner: Konoba Matejuška (seafood)",
+      "location_id": "loc_spu_konoba",
+      "start_time": "2026-06-21T20:30:00+02:00", "duration_min": 120,
+      "status": "planned",
+      "cost": { "amount_minor": 18000, "currency": "EUR" }, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "meal_type": "dinner", "cuisine": "Dalmatian seafood" },
+      "notes": "Tiny — go right at opening or book ahead.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-03-12T18:14:00Z", "updated_at": "2026-03-12T18:14:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d10_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_10", "sequence": 1,
+      "type": "activity", "title": "Diocletian's Palace self-guided walk",
+      "location_id": "loc_spu_diocletian",
+      "start_time": "2026-06-22T10:00:00+02:00", "duration_min": 180,
+      "status": "planned",
+      "cost": { "amount_minor": 1500, "currency": "EUR" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 180, "ticket_required": true },
+      "notes": "Cathedral bell tower climb worth it for the view.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-03-15T11:40:00Z", "updated_at": "2026-03-15T11:40:00Z", "version": 1
+    },
+    {
+      "id": "itm_d10_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_10", "sequence": 2,
+      "type": "activity", "title": "Marjan Hill hike + sunset",
+      "location_id": "loc_spu_marjan",
+      "start_time": "2026-06-22T17:30:00+02:00", "duration_min": 120,
+      "status": "planned",
+      "cost": null, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "category": "outdoor", "duration_min": 120, "ticket_required": false },
+      "notes": "Bring water. Trail starts behind Varoš district.",
+      "created_by": "usr_01HXLEOPRTNR0000000000000Z", "created_at": "2026-03-15T11:50:00Z", "updated_at": "2026-03-15T11:50:00Z", "version": 1
+    },
+    {
+      "id": "itm_d10_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_10", "sequence": 3,
+      "type": "activity", "title": "Bačvice beach afternoon",
+      "location_id": "loc_spu_bacvice",
+      "start_time": "2026-06-22T14:00:00+02:00", "duration_min": 180,
+      "status": "completed",
+      "cost": null, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "category": "outdoor", "duration_min": 180, "ticket_required": false },
+      "notes": "Sandy beach (rare in Croatia). Locals play picigin in the shallows.",
+      "created_by": "usr_01HXANNAPRT0000000000000Z", "created_at": "2026-03-15T12:01:00Z", "updated_at": "2026-03-15T12:01:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d11_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_11", "sequence": 1,
+      "type": "transit", "title": "Catamaran Split → Hvar (Krilo Jet)",
+      "location_id": "loc_hva_port",
+      "start_time": "2026-06-23T13:00:00+02:00", "end_time": "2026-06-23T14:00:00+02:00",
+      "status": "booked", "booking_ref": "KRILO-2026-06-23-1300",
+      "booking_url": "https://www.krilo.hr/",
+      "cost": { "amount_minor": 4800, "currency": "EUR" }, "cost_split": "personal",
+      "source_url": "https://www.krilo.hr/",
+      "extracted_from": "link",
+      "details": { "mode": "ferry", "carrier": "Kapetan Luka (Krilo)", "from_location_id": "loc_spu_ferryport", "to_location_id": "loc_hva_port", "departure_time": "2026-06-23T13:00:00+02:00", "arrival_time": "2026-06-23T14:00:00+02:00" },
+      "notes": "Foot-passenger only. Be at the dock 30 min before.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-03-20T09:30:00Z", "updated_at": "2026-03-20T09:30:00Z", "version": 1
+    },
+    {
+      "id": "itm_d11_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_11", "sequence": 2,
+      "type": "lodging", "title": "Villa Skansi Hvar (2 nights)",
+      "location_id": "loc_hva_apt",
+      "start_time": "2026-06-23T15:00:00+02:00", "end_time": "2026-06-25T09:00:00+02:00",
+      "status": "booked", "booking_ref": "SKANSI-2026-06-23-2N",
+      "booking_url": "https://www.booking.com/sample-villa-skansi-hvar",
+      "cost": { "amount_minor": 38000, "currency": "EUR" }, "cost_split": "shared",
+      "source_url": "https://www.booking.com/sample-villa-skansi-hvar",
+      "extracted_from": "link",
+      "details": { "check_in": "2026-06-23T15:00:00+02:00", "check_out": "2026-06-25T09:00:00+02:00", "nights": 2, "room_type": "Two doubles with sea view", "guests_count": 4 },
+      "notes": "10 min uphill walk from port. Has a small pool.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-03-20T09:40:00Z", "updated_at": "2026-03-20T09:40:00Z", "version": 1
+    },
+    {
+      "id": "itm_d11_03", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_11", "sequence": 3,
+      "type": "meal", "title": "Sunset dinner: Dalmatino Hvar",
+      "location_id": "loc_hva_dalmatino",
+      "start_time": "2026-06-23T20:00:00+02:00", "duration_min": 120,
+      "status": "booked", "booking_ref": "DALMATINO-2026-06-23-20",
+      "cost": { "amount_minor": 24000, "currency": "EUR" }, "cost_split": "shared",
+      "extracted_from": "manual",
+      "details": { "meal_type": "dinner", "cuisine": "Modern Croatian" },
+      "notes": "Reservation under 'Chen'. Beef cheek is the standout.",
+      "created_by": "usr_01HXANNAPRT0000000000000Z", "created_at": "2026-03-21T15:18:00Z", "updated_at": "2026-03-21T15:18:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d12_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_12", "sequence": 1,
+      "type": "activity", "title": "Pakleni Islands boat day (Carpe Diem Beach)",
+      "location_id": "loc_hva_pakleni",
+      "start_time": "2026-06-24T10:00:00+02:00", "duration_min": 360,
+      "status": "planned",
+      "cost": { "amount_minor": 6000, "currency": "EUR" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "outdoor", "duration_min": 360, "ticket_required": true },
+      "notes": "Water taxis leave from Hvar Riva all morning. ~5 min ride to Jerolim, longer to Palmižana.",
+      "created_by": "usr_01HXJAMESWE0000000000000Z", "created_at": "2026-03-25T08:00:00Z", "updated_at": "2026-03-25T08:00:00Z", "version": 1
+    },
+    {
+      "id": "itm_d12_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_12", "sequence": 2,
+      "type": "activity", "title": "Hike up to Fortica (Spanish Fortress) for sunset",
+      "location_id": "loc_hva_fortress",
+      "start_time": "2026-06-24T19:30:00+02:00", "duration_min": 75,
+      "status": "planned",
+      "cost": { "amount_minor": 1000, "currency": "EUR" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "category": "sightseeing", "duration_min": 75, "ticket_required": true },
+      "notes": "20 minute uphill walk. Iconic view over Pakleni at sunset.",
+      "created_by": "usr_01HXLEOPRTNR0000000000000Z", "created_at": "2026-03-25T08:05:00Z", "updated_at": "2026-03-25T08:05:00Z", "version": 1
+    },
+
+    {
+      "id": "itm_d13_01", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_13", "sequence": 1,
+      "type": "transit", "title": "Ferry Hvar → Split (early)",
+      "location_id": "loc_spu_ferryport",
+      "start_time": "2026-06-25T08:00:00+02:00", "end_time": "2026-06-25T09:00:00+02:00",
+      "status": "booked", "booking_ref": "KRILO-2026-06-25-0800",
+      "cost": { "amount_minor": 4800, "currency": "EUR" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "mode": "ferry", "carrier": "Kapetan Luka (Krilo)", "from_location_id": "loc_hva_port", "to_location_id": "loc_spu_ferryport", "departure_time": "2026-06-25T08:00:00+02:00", "arrival_time": "2026-06-25T09:00:00+02:00" },
+      "notes": "Walk-on. Coffee on board.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-03-25T09:00:00Z", "updated_at": "2026-03-25T09:00:00Z", "version": 1
+    },
+    {
+      "id": "itm_d13_02", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": "day_13", "sequence": 2,
+      "type": "transit", "title": "Flight SPU → YYZ (return, multi-leg)",
+      "location_id": "loc_spu_airport",
+      "start_time": "2026-06-25T13:10:00+02:00", "end_time": "2026-06-25T22:55:00-04:00",
+      "status": "booked", "booking_ref": "QV8X2P",
+      "cost": { "amount_minor": 0, "currency": "CAD" }, "cost_split": "personal",
+      "extracted_from": "manual",
+      "details": { "mode": "flight", "carrier": "Lufthansa + Air Canada", "from_location_id": "loc_spu_airport", "to_location_id": null, "departure_time": "2026-06-25T13:10:00+02:00", "arrival_time": "2026-06-25T22:55:00-04:00", "class": "economy" },
+      "notes": "SPU→FRA→YYZ. Cost is in the day-1 outbound booking.",
+      "created_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-03-25T09:05:00Z", "updated_at": "2026-03-25T09:05:00Z", "version": 1
+    }
+  ],
+
+  "comments": [
+    {
+      "id": "cmt_001", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": "itm_d02_05", "day_id": null,
+      "author": "usr_01HXANNAPRT0000000000000Z", "body": "Leo — confirm if paprika is actually a problem? Most Hungarian dishes will have it.", "parent_id": null, "mentions": ["usr_01HXLEOPRTNR0000000000000Z"],
+      "created_at": "2026-04-18T09:50:00Z", "updated_at": "2026-04-18T09:50:00Z", "deleted_at": null
+    },
+    {
+      "id": "cmt_002", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": "itm_d02_05", "day_id": null,
+      "author": "usr_01HXLEOPRTNR0000000000000Z", "body": "Mild paprika is fine. Just no hot paprika cream.", "parent_id": "cmt_001", "mentions": [],
+      "created_at": "2026-04-18T10:01:00Z", "updated_at": "2026-04-18T10:01:00Z", "deleted_at": null
+    },
+    {
+      "id": "cmt_003", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": "itm_d07_04", "day_id": null,
+      "author": "usr_01HXJAMESWE0000000000000Z", "body": "I'm voting Vietnamese, Sapa Restaurant near Holešovice has been recommended a few times.", "parent_id": null, "mentions": [],
+      "created_at": "2026-05-01T08:12:00Z", "updated_at": "2026-05-01T08:12:00Z", "deleted_at": null
+    },
+    {
+      "id": "cmt_004", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": "itm_d11_02", "day_id": null,
+      "author": "usr_01HXLEOPRTNR0000000000000Z", "body": "Photos look amazing. The uphill walk with bags will be brutal in 30°C heat though — should we look at a luggage transfer?", "parent_id": null, "mentions": [],
+      "created_at": "2026-05-10T14:22:00Z", "updated_at": "2026-05-10T14:22:00Z", "deleted_at": null
+    },
+    {
+      "id": "cmt_005", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": null, "day_id": "day_05",
+      "author": "usr_01HXMAYAORG0000000000000Z", "body": "Reminder for everyone: the train leaves at 07:25 — we leave the hotel at 06:30 sharp.", "parent_id": null, "mentions": ["usr_01HXANNAPRT0000000000000Z","usr_01HXJAMESWE0000000000000Z","usr_01HXLEOPRTNR0000000000000Z"],
+      "created_at": "2026-05-21T19:12:00Z", "updated_at": "2026-05-21T19:12:00Z", "deleted_at": null
+    }
+  ],
+
+  "attachments": [
+    {
+      "id": "att_001", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": "itm_d01_02", "day_id": null,
+      "kind": "image", "url": "https://example.com/attachments/hotel-rum-roof.jpg", "filename": "hotel-rum-roof.jpg",
+      "mime_type": "image/jpeg", "size_bytes": 1842331,
+      "uploaded_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2025-12-12T20:18:00Z"
+    },
+    {
+      "id": "att_002", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": "itm_d05_01", "day_id": null,
+      "kind": "pdf", "url": "https://example.com/attachments/mav-ec273-confirmation.pdf", "filename": "MAV-EC273-confirmation.pdf",
+      "mime_type": "application/pdf", "size_bytes": 312445,
+      "uploaded_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-02-20T20:24:00Z"
+    },
+    {
+      "id": "att_003", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": "itm_d09_02", "day_id": null,
+      "kind": "image", "url": "https://example.com/attachments/airbnb-riva-living-room.jpg", "filename": "airbnb-riva-living-room.jpg",
+      "mime_type": "image/jpeg", "size_bytes": 2103450,
+      "uploaded_by": "usr_01HXANNAPRT0000000000000Z", "created_at": "2026-03-11T12:36:00Z"
+    },
+    {
+      "id": "att_004", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "item_id": "itm_d11_02", "day_id": null,
+      "kind": "image", "url": "https://example.com/attachments/villa-skansi-pool.jpg", "filename": "villa-skansi-pool.jpg",
+      "mime_type": "image/jpeg", "size_bytes": 1655200,
+      "uploaded_by": "usr_01HXMAYAORG0000000000000Z", "created_at": "2026-03-20T09:45:00Z"
+    }
+  ],
+
+  "costs": [
+    {
+      "id": "cst_001", "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "day_id": null, "item_id": null,
+      "label": "Shared kitty (cash for tips, transit cards, misc.)",
+      "amount": { "amount_minor": 40000, "currency": "EUR" }, "paid_by": "usr_01HXMAYAORG0000000000000Z",
+      "split_among": ["usr_01HXMAYAORG0000000000000Z","usr_01HXANNAPRT0000000000000Z","usr_01HXJAMESWE0000000000000Z","usr_01HXLEOPRTNR0000000000000Z"],
+      "created_at": "2026-05-21T19:12:00Z", "updated_at": "2026-05-21T19:12:00Z", "version": 1
+    }
+  ],
+
+  "presence": [
+    { "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "user_id": "usr_01HXMAYAORG0000000000000Z",  "last_seen_at": "2026-05-23T10:55:00Z", "focused_entity_id": "itm_d07_04", "cursor_position": null, "color": "#ff6b6b" },
+    { "trip_id": "trp_01HXBUDPRGSPU000000000000Z", "user_id": "usr_01HXJAMESWE0000000000000Z",  "last_seen_at": "2026-05-23T10:54:30Z", "focused_entity_id": "itm_d07_04", "cursor_position": { "field": "notes", "offset": 42 }, "color": "#4dabf7" }
+  ]
+}
