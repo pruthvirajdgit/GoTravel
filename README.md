@@ -21,18 +21,24 @@ exists to fix three things at once:
 Budget tracking with multi-currency support is woven through every item, not buried in a
 separate tab.
 
-## Differentiators vs. TripIt, Wanderlog, and TripCase
+## Differentiators vs. TripIt, Wanderlog, and Roadtrippers
 
-| Capability                                | TripIt | Wanderlog | TripCase | **GoTravel (planned)** |
-|-------------------------------------------|:------:|:---------:|:--------:|:----------------------:|
-| Native iOS + Android                      |   ✅   |    ✅     |    ✅    |          ✅            |
-| Map-first itinerary view                  |   ➖   |    ✅     |    ➖    |          ✅            |
-| Live multi-user editing w/ presence       |   ➖   |    ➖     |    ➖    |          ✅            |
-| Link-paste smart import                   |   ➖   |  partial  |    ➖    |          ✅            |
-| Excel/CSV smart import                    |   ➖   |    ➖     |    ➖    |          ✅            |
-| Multi-currency budget per item            | partial|    ✅     |    ➖    |          ✅            |
+> **Note:** TripCase (Sabre) was discontinued in 2023. We compare against
+> live alternatives. See `docs/research/feature-matrix.md` for the full
+> 7-competitor matrix.
 
-(Detailed teardowns: `docs/research/competitor-teardowns/`)
+| Capability                                | TripIt | Wanderlog | Roadtrippers | **GoTravel (planned MVP)** |
+|-------------------------------------------|:------:|:---------:|:------------:|:--------------------------:|
+| Native iOS + Android                      |   ✅   |    ✅     |     ✅       |            ✅              |
+| Map-first itinerary view                  |   ❌   |    ✅     |     ✅       |            ✅              |
+| Live multi-user editing **with presence** |   ❌   |  partial  |     ❌       |            ✅              |
+| Link-paste smart import                   |   ❌   |  partial  |     ❌       |            ✅              |
+| **Excel/CSV smart import**                |   ❌   |    ❌     |     ❌       |            ✅              |
+| Multi-currency budget per item            | partial|    ✅     |     ❌       |            ✅              |
+| Offline-first **not paywalled**           | text-only| Pro only| Premium only |            ✅              |
+
+(Detailed teardowns: `docs/research/competitor-teardowns/`. Top-10 market
+gaps: `docs/research/gap-analysis.md`.)
 
 ## Repository layout
 
