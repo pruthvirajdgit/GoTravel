@@ -95,6 +95,7 @@ when we build it, it's well-understood scope.
 | Excel/CSV smart import | `p5-spike-excel` → `p6-excel-import` | `05a-excel-upload.svg`, `05b-excel-column-mapping.svg`, `05c-excel-import-success.svg` | `stack-decision.md` (SheetJS + LLM column-inference) — templates already published in `docs/product/templates/` |
 | CSV export | `csv-export` | — | reverse of the import pipeline |
 | ETA-based smart reminders | `p8-smart-reminders` | — (logic, not UI) | Spec to be written; will use Mapbox Directions API + background location |
+| Monetization model + "Free Forever" commitment | `risk-monetization`, `free-forever-commitment` | — | Deferred 2026-05-23 — lean MVP ships uniformly free with no paywall hooks; both items become meaningful only when a paid tier is on the table |
 | Day-of "trip mode" + tracking handoff | `p8-planning-tracking-handoff` | `17-trip-mode-active.svg` | TBD |
 | Trip recap | (under `p8-post-mvp`) | `18-trip-recap.svg` | TBD |
 | Email inbox / AI generation / booking / wearables / web / social | `p8-post-mvp` | — | TBD when prioritized |
